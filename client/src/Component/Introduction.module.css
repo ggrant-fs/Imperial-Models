@@ -1,0 +1,19 @@
+.intro{
+   margin-top: 20px;
+}
+
+.intro__img,
+.intro__decription{
+  height: 300px;
+  display: inline-block;
+}
+
+.intro__img{
+  background-color: orange;
+  width:55%;
+}
+
+.intro__decription{
+ width: 45%;
+ background-color: chartreuse;
+}

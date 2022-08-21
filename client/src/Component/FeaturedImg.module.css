@@ -1,0 +1,19 @@
+.featured-photos div{
+    display: inline-block;
+    height: 430px;
+    width: 50%;
+}
+
+.featured-photos--image1{
+   background-color: aqua;
+}
+.featured-photos--image2{
+    background-color: yellow;
+}
+.featured-photos--image1:hover{
+    background: blue;
+}
+.featured-photos--image2:hover{
+    background-color:darksalmon;
+}
+

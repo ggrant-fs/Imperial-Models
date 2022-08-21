@@ -1,0 +1,6 @@
+.main-header{
+    height: 25px;
+    background-color: red;
+    position:sticky;
+    top:0;
+}
