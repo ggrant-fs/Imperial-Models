@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './SignUpCTA.module.css';
+// import styles from './ApplyCTA.module.css';
 
 const SignUpCTA = (props) =>{
     return (
