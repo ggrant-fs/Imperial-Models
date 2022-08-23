@@ -6,9 +6,10 @@ const Introduction = () =>{
         <React.Fragment>
         <section className={styles.intro}>
             <div className={styles.intro__img}></div>
-            <div className={styles.intro__decription}>
+            <article className={styles.intro__decription}>
+                <h2 className={styles.intro__title}>Introduction title goes here</h2>
                 <p></p>
-            </div>
+            </article>
         </section>
         </React.Fragment>
     )
