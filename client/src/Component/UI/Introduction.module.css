@@ -1,26 +1,24 @@
 .intro{
    margin-top: 20px;
-   position:relative;
 }
 
 .intro__img,
 .intro__decription{
   height: 300px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .intro__img{
   background-color: orange;
-  position:absolute;
-  left:20px;
-  width:50%;
+  margin: 0 10px 0 20px;
+  width:45%;
 }
 
 .intro__decription{
- width: 40%;
+ width: 45%;
+ margin: 0 20px 0 15px;
  background-color: chartreuse;
- position:absolute;
- right:30px;
 }
 
 .intro__title{
