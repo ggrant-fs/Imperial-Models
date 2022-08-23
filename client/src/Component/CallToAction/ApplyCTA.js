@@ -1,8 +1,8 @@
 import React from 'react';
 import ApplyBtn from './ApplyBtn';
-// import styles from './ApplyCTA.module.css';
+import styles from './ApplyCTA.module.css';
 
-const SignUpCTA = (props) =>{
+const ApplyCTA= (props) =>{
     return (
         <React.Fragment>
               <form>
@@ -13,4 +13,4 @@ const SignUpCTA = (props) =>{
     )
 }
 
-export default SignUpCTA;
+export default ApplyCTA;
