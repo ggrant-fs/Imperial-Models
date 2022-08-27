@@ -1,5 +1,3 @@
-//require express to use middleware & create express methods
-//require morgan for logging
 const express = require('express');
 const morgan = require('morgan');
 
