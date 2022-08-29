@@ -8,6 +8,6 @@ const subscriberSchema = new mongoose.Schema({
      timestamp:true
 });
 
-const Subscriber = mongoose.mondel('Subscriber', subscriberSchema);
+const Subscriber = mongoose.model('Subscriber', subscriberSchema);
 
-module.export = Subscriber;
+module.exports = Subscriber;
