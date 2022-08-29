@@ -38,4 +38,18 @@ app.get('/api/v1/models/female-models',(req,res)=>{
 });
 
 
+app.get('/api/v1/blogpost',(req,res)=>{
+    res.status(500).json({
+        status:''
+    });
+});
+
+app.get('/api/v1/blogpost/:id',(req,res)=>{
+    res.status(500).json({
+        status:''
+    })
+})
+
+
+
 module.exports = app; // allows for use to use middlewere in other files
