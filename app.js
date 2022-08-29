@@ -47,8 +47,15 @@ app.get('/api/v1/blogpost',(req,res)=>{
 app.get('/api/v1/blogpost/:id',(req,res)=>{
     res.status(500).json({
         status:''
-    })
-})
+    });
+});
+
+
+app.post('/api/v1/subscribe',(req,res)=>{
+    res.status(500).json({
+        status:''
+    });
+});
 
 
 
