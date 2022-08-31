@@ -1,9 +1,10 @@
+import { Fragment } from 'react';
 import React from 'react';
 import styles from './Introduction.module.css';
 
 const Introduction = () =>{
     return (
-        <React.Fragment>
+        <Fragment>
         <section className={styles.intro}>
             <div className={styles.intro__img}></div>
             <article className={styles.intro__decription}>
@@ -11,7 +12,7 @@ const Introduction = () =>{
                 <p></p>
             </article>
         </section>
-        </React.Fragment>
+        </Fragment>
     )
 };
 

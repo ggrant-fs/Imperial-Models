@@ -1,13 +1,14 @@
+import { Fragment } from 'react';
 import React from 'react';
 import styles from './Footer.module.css';
 
 const Footer = (props) =>{
     return (
-        <React.Fragment>
+        <Fragment>
           <footer className={styles['main-footer']}>
              <h2>This is the footer</h2>
           </footer>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

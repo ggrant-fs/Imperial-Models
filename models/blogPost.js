@@ -23,7 +23,7 @@ const blogPostSchema  = new mongoose.Schema({
         type:String,
         required:[true,'Every blog mush have an author']
       },
-      timestamps:true
+      // timestamps:true
 });
 
 const BlogPost = mongoose.model('BlogPost', blogPostSchema);

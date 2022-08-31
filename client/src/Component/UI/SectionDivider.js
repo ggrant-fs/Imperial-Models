@@ -1,14 +1,15 @@
+import { Fragment } from 'react';
 import React from 'react';
 // import styles from './SectionDivider.module.css';
 
 
 const SectionDivider = (props) =>{
     return (
-        <React.Fragment>
+        <Fragment>
             <div className={`${props.className}`}>
               {props.children}
             </div>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

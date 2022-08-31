@@ -1,5 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
+const blogRouter = require('./routes/blogRoutes');
+const modelRouter = require('./routes/modelRoutes')
 
 const app = express();
 //import routes from routes folders
@@ -10,16 +12,18 @@ const app = express();
 // }
 
 //middleware
+app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.static(`${__dirname}/client/public`));
 
 
-app.use('/api/v1/models');
-app.use('/api/v1/models/:id');
-app.use('/api/v1/models/male-models');
-app.use('/api/v1/models/female-models');
-app.use('/api/v1/blogpost');
-app.use('/api/v1/blogpost/:id');
-app.use('/api/v1/subscribe');
+// app.use('/api/v1/subscribe');
+app.use('/api/v1/models',modelRouter);
+app.use('/api/v1/models/:id',modelRouter);
+app.use('/api/v1/models/male-models',modelRouter);
+app.use('/api/v1/models/female-models',modelRouter);
 
-module.exports = app; // allows for use to use middlewere in other files
+app.use('/api/v1/blogpost',blogRouter);
+// app.use('/api/v1/blogpost/:id');
+
+module.exports = app; 

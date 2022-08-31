@@ -2,12 +2,14 @@ const BlogPost = require('./../models/blogPost');
 
 exports.getAllBlogPost = (req,res)=>{
     res.status(500).json({
-        status:''
+        status:'Error',
+        message:'no data available'
     });
 }
 
 exports.getBlogPost = (req,res)=>{
     res.status(500).json({
-        status:''
+        status:'Error',
+        message:'no data available'
     });
 }

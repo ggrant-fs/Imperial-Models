@@ -1,11 +1,12 @@
+import { Fragment } from 'react';
 import React from 'react';
 import Home from './Screens/Home'
 
 function App() {
   return (
-    <React.Fragment>
+    <Fragment>
       <Home />
-    </React.Fragment>
+    </Fragment>
   )
 }
 
