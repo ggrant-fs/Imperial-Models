@@ -4,9 +4,8 @@ const subscriberSchema = new mongoose.Schema({
     email:{
         type: String,
         required:[true,'Each subscription must include an email']
-     },
-     timestamp:true
-});
+     }
+},{timestamp:true});
 
 const Subscriber = mongoose.model('Subscriber', subscriberSchema);
 

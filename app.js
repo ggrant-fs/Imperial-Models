@@ -17,13 +17,11 @@ app.use(express.json());
 app.use(express.static(`${__dirname}/client/public`));
 
 
-// app.use('/api/v1/subscribe');
 app.use('/api/v1/models',modelRouter);
 app.use('/api/v1/models/:id',modelRouter);
 app.use('/api/v1/models/male-models',modelRouter);
 app.use('/api/v1/models/female-models',modelRouter);
 
 app.use('/api/v1/blogpost',blogRouter);
-// app.use('/api/v1/blogpost/:id');
 
 module.exports = app; 

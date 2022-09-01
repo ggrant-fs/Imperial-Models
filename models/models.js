@@ -12,8 +12,13 @@ const modelsSchema = new mongoose.Schema({
     lastName:{
         type:String,
         required:[true,'Every model must have a last name']
-    }
-});
+    },
+    gender:{
+        type:String,
+        required:[true,'Every model should have a gender']
+    },
+    
+ },{timestamps:true});
 
 const Model = mongoose.model('Model',modelsSchema);
 
