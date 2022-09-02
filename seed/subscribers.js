@@ -1,6 +1,7 @@
 const db = require('./db');
 const Subscriber = require('./../models/subscribers');
-const mongoose = require('mongoose');
+
+// const mongoose = require('mongoose');
 const newSubscriber= require('./seedConstructor');
 
 
