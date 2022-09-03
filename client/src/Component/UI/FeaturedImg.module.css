@@ -5,18 +5,10 @@
     vertical-align: top;
 }
 
-/* .test1{
-    background-color: aqua;
-} */
-
-/* .test2{
-    background-color: brown;
-} */
-
 .feature-photos__img1{
   height:100%;
   width: 100%;
-  filter:grayscale(100%)
+  filter:grayscale(100%);
 }
 
 .feature-photos__img2{

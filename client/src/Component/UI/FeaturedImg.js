@@ -8,10 +8,10 @@ const FeaturedImg = () =>{
     return (
         <Fragment>
             <div className={styles['feature-photos']}>
-               <div className={`${styles['feature-photos__container']} ${styles.test1}`}>
+               <div className={styles['feature-photos__container']}>
                    <img src={imageOne} alt='first feature img' className={styles['feature-photos__img1']}/>
                </div>
-               <div className={`${styles['feature-photos__container']} ${styles.test2}`}>
+               <div className={styles['feature-photos__container']}>
                   <img src={imageTwo} alt='second feature img' className={styles['feature-photos__img2']}/>
                </div>
             </div>
