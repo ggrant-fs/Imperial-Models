@@ -1,7 +1,7 @@
 .main-header{
-    height: 25px;
-    background-color: white;
-    position: sticky;
+   height: 25px;
+   background-color: white;
+   position: sticky;
    top:0;
    left:0;
    z-index:100;
