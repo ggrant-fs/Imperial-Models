@@ -16,7 +16,7 @@ const SubscriptionModal = (props) =>{
     return (
         <Fragment>
             <div className={`${styles['subscription_modal']} ${props.className}`} >
-
+                {props.children}
             </div>
         </Fragment>
     )
