@@ -3,15 +3,18 @@
     width:50%;
     display: inline-block;
     vertical-align: top;
+    /* z-index: 99; */
 }
 
 .feature-photos__img1{
   height:100%;
   width: 100%;
   filter:grayscale(100%);
+  z-index: 99;
 }
 
 .feature-photos__img2{
   height:100%;
   width: 100%;
+  z-index: 99;
 }

@@ -12,7 +12,6 @@ const Home = (props) =>{
     return (
         <Fragment>
            <Header />
-           {/* the conditional render of the SignUpCTA component goes here */}
            <FeaturedImg />
            <Introduction />
             <SectionDivider className={styles['blog-section']}/>

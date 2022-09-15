@@ -1,0 +1,7 @@
+.subscription_modal{
+  background-color: rgba(88, 65, 7, 0.779);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 101;
+}

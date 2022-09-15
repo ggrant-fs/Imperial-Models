@@ -1,11 +1,21 @@
 import { Fragment } from "react";
 import React from 'react';
-import style from './SubscriptionModal.module.css';
+import styles from './SubscriptionModal.module.css';
 
 const SubscriptionModal = (props) =>{
+
+//    const subscriptionChangeHandler = (event) =>{
+//      event.preventDefault();
+
+//    }
+
+//    const submitChangeHandler = (event) =>{
+//     event.preventDefault();
+//    }
+
     return (
         <Fragment>
-            <div>
+            <div className={`${styles['subscription_modal']} ${props.className}`} >
 
             </div>
         </Fragment>
