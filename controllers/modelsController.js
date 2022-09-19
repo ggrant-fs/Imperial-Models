@@ -6,7 +6,6 @@ const Model = require('./../models/models');
 exports.getAllModels = async(req,res) =>{
     try{
          const models = await Model.find();
-
          res.status(200).json({
             status:'success',
             total: models.length,
@@ -26,7 +25,6 @@ exports.getAllModels = async(req,res) =>{
 exports.getAllMaleModels= async(req,res) =>{
     try{
         const maleModels = await Model.find({gender:"male"});
-
         res.status(200).json({
            status:'success',
            total: maleModels.length,
@@ -45,7 +43,6 @@ exports.getAllMaleModels= async(req,res) =>{
 exports.getAllFemaleModels = async(req,res) =>{
     try{
         const femaleModels = await Model.find({gender:"female"});
-
         res.status(200).json({
             status:"success",
             total: femaleModels.length,
@@ -55,10 +52,27 @@ exports.getAllFemaleModels = async(req,res) =>{
         })
 
     }catch(err){
-
         res.status(500).json({
             status:'fail',
             message:err
         })
+    }
+}
+
+exports.getModel = async(req,res) =>{
+    try{
+        const model = await Model.findById(req.params.id);
+        res.status(200).json({
+            status:'success',
+            data:{
+                model
+            }
+        })
+
+    }catch(err){
+       res.status(500).json({
+        status:"fail",
+        meessage:err
+       })
     }
 }
