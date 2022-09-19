@@ -22,3 +22,23 @@ exports.getAllModels = async(req,res) =>{
         });
     }
 }
+
+exports.getModel = async(req,res) =>{
+    try{
+       const model = await Model.findById(req.params.id);
+
+       res.status(200).json({
+        status:'success',
+        total: model.length,
+        data:{
+            model
+        }
+       })
+    }catch(err){
+       
+      res.status(500).json({
+        status:'fail',
+        message:err
+      });
+    }
+}
