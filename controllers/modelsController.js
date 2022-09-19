@@ -1,25 +1,24 @@
 const Model = require('./../models/models');
+//getAllModels
+//getModel
+//getAllMaleModels
+//getAllFemaleModels
 
-exports.getAllModels = (req,res)=>{
-    res.status(500).json({
-        status:'pending all model data'
-    });
-}
+exports.getAllModels = async(req,res) =>{
+    try{
+         const models = await Model.find();
 
-exports.getModel =(req,res)=>{
-    res.status(500).json({
-        status:'pending model data'
-    });
-}
-
-exports.getAllMaleModels = (req,res)=>{
-    res.status(500).json({
-       status:'pending male model data'
-    });
-}
-
-exports.getAllFemaleModels = (req,res)=>{
-    res.status(500).json({
-        status:'pending female model data'
-    });
+         res.status(200).json({
+            status:'success',
+            total: models.length,
+            data:{
+                models
+            }
+         })
+    }catch(err){
+        res.status(500).json({
+            status:'fail',
+            message:err
+        });
+    }
 }
