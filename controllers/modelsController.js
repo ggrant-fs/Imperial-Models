@@ -1,8 +1,7 @@
 const Model = require('./../models/models');
-//getAllModels
-//getModel
-//getAllMaleModels
+
 //getAllFemaleModels
+//getModel
 
 exports.getAllModels = async(req,res) =>{
     try{
@@ -23,22 +22,43 @@ exports.getAllModels = async(req,res) =>{
     }
 }
 
-exports.getModel = async(req,res) =>{
-    try{
-       const model = await Model.findById(req.params.id);
 
-       res.status(200).json({
-        status:'success',
-        total: model.length,
-        data:{
-            model
-        }
-       })
+exports.getAllMaleModels= async(req,res) =>{
+    try{
+        const maleModels = await Model.find({gender:"male"});
+
+        res.status(200).json({
+           status:'success',
+           total: maleModels.length,
+           data:{
+               maleModels
+           }
+        })
+   }catch(err){
+       res.status(500).json({
+           status:'fail',
+           message:err
+       });
+   }
+}
+
+exports.getAllFemaleModels = async(req,res) =>{
+    try{
+        const femaleModels = await Model.find({gender:"female"});
+
+        res.status(200).json({
+            status:"success",
+            total: femaleModels.length,
+            data:{
+                femaleModels
+            }
+        })
+
     }catch(err){
-       
-      res.status(500).json({
-        status:'fail',
-        message:err
-      });
+
+        res.status(500).json({
+            status:'fail',
+            message:err
+        })
     }
 }
