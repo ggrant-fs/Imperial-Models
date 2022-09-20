@@ -13,8 +13,17 @@ const Home = (props) =>{
         <Fragment>
            <Header />
            <FeaturedImg />
+            <SectionDivider>
+                <div>
+                    <h3 className={styles['section-block_title']}>The Brand</h3>
+                </div>
+            </SectionDivider>
            <Introduction />
-            <SectionDivider className={styles['blog-section']}/>
+           <SectionDivider>
+                <div>
+                    <h3 className={styles['section-block_title']}>The Culture</h3>
+                </div>
+            </SectionDivider>
            <Footer/>
         </Fragment>
     )

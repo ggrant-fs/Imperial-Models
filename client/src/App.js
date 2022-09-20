@@ -6,7 +6,9 @@ import SubscriptionModal from './Component/Modal/SubscriptionModal';
 function App() {
   return (
     <Fragment>
-      <SubscriptionModal/>
+      <SubscriptionModal>
+        
+      </SubscriptionModal>
       <Home />
     </Fragment>
   )

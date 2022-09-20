@@ -6,9 +6,9 @@ import SubscriptionModal from "./SubscriptionModal";
 const NewSubscriber = (props) =>{
     return (
         <Fragment>
-            <SubscriptionModal  className={styles['newSubscriber-container']}>
-
-            </SubscriptionModal>
+          <div>
+            
+          </div>
         </Fragment>
     )
 }

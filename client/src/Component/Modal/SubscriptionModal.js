@@ -25,7 +25,7 @@ const SubscriptionModal = (props) =>{
             onClick={subscriptionChangeHandler} 
             style={{'display': background}}
             >
-                {props.children}
+               {props.children}
             </div>
         </Fragment>
     )
