@@ -18,3 +18,9 @@
   width: 100%;
   z-index: 99;
 }
+
+@media(max-width:450px){
+  .feature-photos__container{
+    height: 21rem;
+  }
+}
