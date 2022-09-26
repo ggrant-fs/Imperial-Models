@@ -4,10 +4,22 @@ const router = express.Router();
 
 
 //routes for models contorllers
-router.get('/',modelsController.getAllModels);
-router.get('/:id',modelsController.getModel);
-router.get('/male-models',modelsController.getAllMaleModels);
-router.get('/female-models',modelsController.getAllFemaleModels);
+router
+.route('/')
+.get(modelsController.getAllModels);
 
+
+router
+.route('/male-models')
+.get(modelsController.getAllMaleModels);
+
+
+router
+.route('/female-models')
+.get(modelsController.getAllFemaleModels);
+
+router
+.route('/:id')
+.get(modelsController.getModel);
 
 module.exports = router;

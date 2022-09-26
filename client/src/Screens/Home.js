@@ -12,18 +12,20 @@ const Home = (props) =>{
     return (
         <Fragment>
            <Header />
-           <FeaturedImg />
-            <SectionDivider>
+           <main>
+             <FeaturedImg />
+             <SectionDivider>
                 <div>
                     <h3 className={styles['section-block_title']}>The Brand</h3>
                 </div>
-            </SectionDivider>
-           <Introduction />
-           <SectionDivider>
+             </SectionDivider>
+             <Introduction />
+             <SectionDivider>
                 <div>
                     <h3 className={styles['section-block_title']}>The Culture</h3>
                 </div>
             </SectionDivider>
+           </main>
            <Footer/>
         </Fragment>
     )

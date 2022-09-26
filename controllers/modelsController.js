@@ -1,7 +1,5 @@
 const Model = require('./../models/models');
 
-//getAllFemaleModels
-//getModel
 
 exports.getAllModels = async(req,res) =>{
     try{

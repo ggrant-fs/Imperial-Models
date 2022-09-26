@@ -11,7 +11,7 @@ const Introduction = () =>{
                 <img src={femaleModel12} alt=' ' className={styles.intro__img}/>
             </div>
             <div className={styles.intro__decription}>
-                <h2 className={styles.intro__title}>Introduction</h2>
+                {/* <h2 className={styles.intro__title}>Introduction</h2> */}
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna

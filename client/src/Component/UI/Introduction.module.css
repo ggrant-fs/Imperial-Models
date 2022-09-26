@@ -1,7 +1,4 @@
 
-.intro{
-   margin-top: 20px;
-}
 
 .intro__img,
 .intro__decription{
@@ -23,7 +20,7 @@
   filter: grayscale();
 }
 .intro__decription{
- width: 40%;
+ width: 35%;
  margin: 0 20px 0 15px;
  display:inline-block;
 }
@@ -35,4 +32,8 @@
 
 .intro__title > p {
   font-size: 10px;
+}
+
+p{
+  margin-top: 0;
 }

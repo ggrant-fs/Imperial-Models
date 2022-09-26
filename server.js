@@ -7,8 +7,11 @@ const app = require('./app');
 
 
 // mongoose connect 
-mongoose.connect(db)
-.then(()=> console.log('Mongo DB connection was successful'))
+mongoose.connect(db,{
+    useNewUrlParser:true, 
+    useCreateIndex:true, 
+    useFindAndModify:false 
+}).then(()=> console.log('Mongo DB connection was successful'))
 
 app.listen(PORT,()=>{
     console.log(`Server is listening on port ${PORT}`)
