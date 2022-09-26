@@ -6,7 +6,7 @@ import styles from './Introduction.module.css';
 const Introduction = () =>{
     return (
         <Fragment>
-        <div className={styles.intro}>
+        {/* <div className={styles.intro}> */}
             <div className={styles.intro__container}>
                 <img src={femaleModel12} alt=' ' className={styles.intro__img}/>
             </div>
@@ -29,7 +29,7 @@ const Introduction = () =>{
                  dui sapien eget mi proin sed libero enim.
                 </p>
             </div>
-        </div>
+        {/* </div> */}
         </Fragment>
     )
 };
