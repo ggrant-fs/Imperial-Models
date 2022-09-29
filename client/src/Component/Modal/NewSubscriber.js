@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import React from "react";
-import styles from './Newsubscriber.module.css';
-import SubscriptionModal from "./SubscriptionModal";
+// import styles from './Newsubscriber.module.css';
 
 const NewSubscriber = (props) =>{
     return (
