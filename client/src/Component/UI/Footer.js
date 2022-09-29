@@ -6,7 +6,6 @@ const Footer = (props) =>{
     return (
         <Fragment>
           <footer className={styles['main-footer']}>
-             <h2>This is the footer</h2>
           </footer>
         </Fragment>
     )

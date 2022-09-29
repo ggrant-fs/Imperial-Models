@@ -16,6 +16,10 @@
   z-index: 99;
 }
 
+/* .feature-photos__img1:hover{
+  filter:none;
+} */
+
 
 @media(max-width:450px){
   .feature-photos__container{
