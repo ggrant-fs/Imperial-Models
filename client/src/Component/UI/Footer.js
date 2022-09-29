@@ -6,6 +6,7 @@ const Footer = (props) =>{
     return (
         <Fragment>
           <footer className={styles['main-footer']}>
+            <div className={styles['main-footer__triangle']}></div>
           </footer>
         </Fragment>
     )
