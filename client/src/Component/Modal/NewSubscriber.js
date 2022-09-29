@@ -1,14 +1,13 @@
-import { Fragment } from "react";
-import React from "react";
+import Modal from './Modal';
 // import styles from './Newsubscriber.module.css';
 
 const NewSubscriber = (props) =>{
     return (
-        <Fragment>
+        <Modal>
           <div>
             
           </div>
-        </Fragment>
+        </Modal>
     )
 }
 

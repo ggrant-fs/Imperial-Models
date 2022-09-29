@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import Header from "../Component/UI/Header";
 import { Fragment } from 'react';
 import Footer from "../Component/UI/Footer";
@@ -9,6 +9,14 @@ import styles from './Home.module.css';
 
 
 const Home = (props) =>{
+const [displayModal, setDisplayModal] = useState('false');
+
+
+useEffect(()=>{
+    const timer = setTimeout(()=> alert('test was successful'),45000);
+    return ()=> clearTimeout(timer);
+},[])
+
     return (
         <Fragment>
            <Header />
