@@ -5,7 +5,7 @@ const NewSubscriber = (props) =>{
     return (
         <Modal>
           <div>
-            
+            <h3>test modal</h3>
           </div>
         </Modal>
     )

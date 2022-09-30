@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ReactDOM } from "react-dom";
+import ReactDOM from 'react-dom'
 import Backdrop from "./Backdrop";
 import ModalOverlay from "./ModalOverlay"
 

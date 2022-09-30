@@ -1,26 +1,26 @@
-import React, { useEffect,useState } from 'react';
 import Header from "../Component/UI/Header";
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Footer from "../Component/UI/Footer";
 import FeaturedImg from '../Component/UI/FeaturedImg';
 import Introduction from '../Component/UI/Introduction';
 import SectionDivider from '../Component/UI/SectionDivider';
+import NewSubscriber from "../Component/Modal/NewSubscriber";
 import styles from './Home.module.css';
 
 
 const Home = (props) =>{
-const [displayModal, setDisplayModal] = useState('false');
+    const [displayModal, setDisplayModal] =useState(false);
 
+    useEffect(()=>{
+         const timer = setTimeout(()=> setDisplayModal(true), 10000);
+         return ()=> clearTimeout(timer)
+    },[])
 
-useEffect(()=>{
-    const timer = setTimeout(()=> alert('test was successful'),45000);
-    return ()=> clearTimeout(timer);
-},[])
-
-    return (
+ return (
         <Fragment>
            <Header />
            <main>
+            {displayModal && <NewSubscriber/>}
              <FeaturedImg />
              <SectionDivider>
                 <div>
