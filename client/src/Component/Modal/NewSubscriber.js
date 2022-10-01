@@ -3,7 +3,7 @@ import Modal from './Modal';
 
 const NewSubscriber = (props) =>{
     return (
-        <Modal>
+        <Modal onClose={props.onClose}>
           <div>
             <h3>test modal</h3>
           </div>

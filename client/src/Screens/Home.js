@@ -16,11 +16,15 @@ const Home = (props) =>{
          return ()=> clearTimeout(timer)
     },[])
 
+    const hideModalHandler =()=>{
+         setDisplayModal(false);
+    }
+
  return (
         <Fragment>
            <Header />
            <main>
-            {displayModal && <NewSubscriber/>}
+            {displayModal && <NewSubscriber onClose={hideModalHandler}/>}
              <FeaturedImg />
              <SectionDivider>
                 <div>
