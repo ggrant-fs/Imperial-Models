@@ -1,5 +1,5 @@
 import Modal from './Modal';
-import femaleModel5 from '../../images/femalemodel8.jpg';
+import femaleModel5 from '../../images/femalemodel5.jpg';
 import styles from './NewSubscriber.module.css';
 
 const NewSubscriber = (props) =>{
