@@ -3,3 +3,14 @@
     height:100px;
     width: 100px;
 }
+
+.modal-image{
+    height: 300px;
+    width:60%;
+    border-radius: 5px;
+    filter:grayscale(100%)
+}
+
+.subscriber{
+    height: 300px;
+}

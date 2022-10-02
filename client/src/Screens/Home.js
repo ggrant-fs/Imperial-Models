@@ -12,7 +12,7 @@ const Home = (props) =>{
     const [displayModal, setDisplayModal] =useState(false);
 
     useEffect(()=>{
-         const timer = setTimeout(()=> setDisplayModal(true), 10000);
+         const timer = setTimeout(()=> setDisplayModal(true), 20000);
          return ()=> clearTimeout(timer)
     },[])
 

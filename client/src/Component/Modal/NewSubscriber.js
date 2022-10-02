@@ -1,11 +1,12 @@
 import Modal from './Modal';
-// import styles from './Newsubscriber.module.css';
+import femaleModel5 from '../../images/femalemodel8.jpg';
+import styles from './NewSubscriber.module.css';
 
 const NewSubscriber = (props) =>{
     return (
         <Modal onClose={props.onClose}>
-          <div>
-            <h3>test modal</h3>
+          <div className={styles.subscriber}>
+            <img src={femaleModel5} alt='female modal' className={styles['modal-image']}/>
           </div>
         </Modal>
     )
