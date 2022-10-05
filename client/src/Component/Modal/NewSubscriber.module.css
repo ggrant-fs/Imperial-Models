@@ -1,16 +1,35 @@
-.sample{
+/* .sample{
     background-color: aqua;
     height:100px;
     width: 100px;
-}
+} */
 
 .modal-image{
+    display:inline-block;
     height: 350px;
-    width:60%;
-    border-radius: 10px;
+    width:55%;
+    border-radius: 10px 0 0 10px;
     filter:grayscale(100%)
 }
 
 .subscriber{
     height: 300px;
+}
+
+.subscriber__form{
+    display:inline-block;
+    height: 350px;
+    width:45%;
+    background-color: #000000;
+    border-radius: 0 10px 10px 0;
+}
+
+.testDiv{
+    display:inline-block;
+}
+
+.modal-image,
+.subscriber__form{
+    vertical-align: top;
+
 }

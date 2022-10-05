@@ -1,11 +1,10 @@
 .modal{
     position:fixed;
-    top:20%;
+    top:15%;
     left: 25%;
     height: 350px;
     width:55vw;
     margin: 0 auto;
-    background-color: black;
     z-index: 500;
     border-radius: 10px;
 }

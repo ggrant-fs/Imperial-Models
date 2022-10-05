@@ -7,6 +7,9 @@ const NewSubscriber = (props) =>{
         <Modal onClose={props.onClose}>
           <div className={styles.subscriber}>
             <img src={femaleModel5} alt='female modal' className={styles['modal-image']}/>
+            <form className={styles.subscriber__form}>
+               
+            </form>
           </div>
         </Modal>
     )

@@ -14,4 +14,6 @@ app.use(express.static(`${__dirname}/client/public`));
 app.use('/api/v1/models',modelRouter);
 app.use('/api/v1/blogpost',blogRouter);
 
+//error handler
+
 module.exports = app; 
