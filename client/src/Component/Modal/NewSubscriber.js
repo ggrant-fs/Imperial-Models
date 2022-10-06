@@ -11,7 +11,9 @@ const NewSubscriber = (props) =>{
               <div className={styles.subscriber__cta}>
                     <p className={styles.subscriber__content}>Subscribe for a chance to join us at this years New York Fashion Week!</p>
               </div>
-             <button className={styles.subscriber__btn} >Subscribe</button>
+              <div className={styles['subscriber-btn-container']}>
+                 <button className={styles.subscriber__btn} >Subscribe</button>
+              </div>
             </form>
           </div>
         </Modal>
