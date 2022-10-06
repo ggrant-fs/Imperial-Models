@@ -28,17 +28,17 @@
   text-align: center;
 }
 
-.intro__title > p {
+.intro__title > .intro__paragraph {
   font-size: 10px;
 }
 
-p{
+.intro__paragraph{
   margin-top: 0;
 }
 
 
 @media(max-width:640px){
-  p{
+  .intro__paragraph{
     display: inline-block;
   }
 

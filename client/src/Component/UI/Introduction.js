@@ -12,7 +12,7 @@ const Introduction = () =>{
             </div>
             <div className={styles.intro__decription}>
                 {/* <h2 className={styles.intro__title}>Introduction</h2> */}
-                <p>
+                <p className={styles.intro__paragraph}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Enim praesent elementum facilisis leo vel fringilla
@@ -21,7 +21,7 @@ const Introduction = () =>{
                 orci nulla pellentesque dignissim.
                 </p>
 
-                <p>
+                <p className={styles.intro__paragraph}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ac turpis egestas maecenas pharetra convallis posuere morbi. 

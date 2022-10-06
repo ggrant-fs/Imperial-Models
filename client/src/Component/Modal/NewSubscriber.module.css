@@ -4,6 +4,8 @@
     width: 100px;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 .modal-image{
     display:inline-block;
     height: 350px;
@@ -47,11 +49,12 @@
     height:35px;
     border-radius: 10px;
     margin: 25% auto;
+    font-family: 'Kaushan Script', cursive;
 }
 
-p{
+.subscriber__content{
     padding:10%;
     font-size: 30px;
-    text-align: center;
-    color:#ffffff;
-}
+     text-align: center; 
+     color:#ffffff; 
+ } 
