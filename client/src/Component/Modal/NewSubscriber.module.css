@@ -55,6 +55,15 @@
     margin-left: auto;
     margin-right: auto;
     font-family: 'Kaushan Script', cursive;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.subscriber__btn:active{
+    background-color: #b4b4b4;
+    color:white;
+    text-decoration: underline;
+    border-width:2px;
 }
 
 .subscriber-btn-container{
