@@ -1,0 +1,50 @@
+
+.culture__main-img{
+    height:40rem;
+    width: 100%;
+    filter: grayscale(100%);
+    vertical-align: bottom;
+    overflow: hidden;
+}
+/* .culture__img-container2,
+.culture__img-container3{
+    background-position: 5% 15%;
+    background-size:cover;
+    background-repeat: none;
+    display: inline-block;
+    height: 450px;
+    width: 450px;
+    vertical-align: bottom;
+} */
+.culture__img-container2{
+    background: url('../../images/featuredimg2.jpg');
+    background-position: 5% 15%;
+    background-size:cover;
+    background-repeat: none;
+    display: inline-block;
+    height: 450px;
+    width: 50%;
+    vertical-align: bottom;
+}
+.culture__img-container3{
+    display:block;
+    position:relative;
+    left: 50vw;
+    background: url('../../images/femalemodel9.jpg');
+    background-position: 5% 80%;
+    background-size:cover;
+    background-repeat: none;
+    /* display: inline-block; */
+    height: 450px;
+    width: 50%;
+    filter: grayscale(100%);
+    margin-top:0;
+    margin-bottom: 0;
+
+}
+.culture__milan-img{
+    display: block;
+    margin-top: 0;
+    height:450px;
+    width:10%;
+}

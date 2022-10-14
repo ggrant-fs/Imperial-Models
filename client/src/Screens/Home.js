@@ -5,6 +5,7 @@ import FeaturedImg from '../Component/UI/FeaturedImg';
 import Introduction from '../Component/UI/Introduction';
 import SectionDivider from '../Component/UI/SectionDivider';
 import NewSubscriber from "../Component/Modal/NewSubscriber";
+import CultureDetails from "../Component/UI/CultureDetails";
 import styles from './Home.module.css';
 
 
@@ -38,6 +39,7 @@ const Home = (props) =>{
                 </div>
             </SectionDivider>
            </main>
+            <CultureDetails/>
            <Footer/>
         </Fragment>
     )
