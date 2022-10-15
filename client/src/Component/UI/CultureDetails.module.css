@@ -51,6 +51,20 @@
     height: 400px;
     width:50%;
 }
+
+.readmore-btn{
+    display: block;
+    margin: 10% auto;
+    color:#ffffff;
+    background-color: #000000;
+    border:none;
+}
+
+.readmore-btn:active{
+    background-color: #b4b4b4;
+    color:#000000;
+    text-decoration: underline;
+}
 .culture__img-container3{
     display:inline-block;
     position:relative;

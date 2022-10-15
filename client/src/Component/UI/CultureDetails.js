@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from './CultureDetails.module.css';
 import femalemodel3 from '../../images/femalemodel3.jpg';
+import ReadMore from './ReadMore';
 
 const CultureDetails = (props) =>{
     return (
@@ -20,6 +21,7 @@ const CultureDetails = (props) =>{
                 egestas.Nunc pulvinar sapien et ligula ullamcorper malesuada proin 
                 libero. Semper risus in hendrerit gravida rutrum quisque non tellus. 
                 </p>
+                <ReadMore className={styles['readmore-btn']}/>
             </div>
             <div className={styles['culture__paris-details']}>
                <h1 className={styles['culture__title']}>Paris</h1>
@@ -36,6 +38,7 @@ const CultureDetails = (props) =>{
                nam at lectus urna duis. Posuere lorem ipsum dolor sit. Purus in massa
                tempor nec feugiat nisl pretium. Purus faucibus ornare suspendisse 
               </p>
+              <ReadMore className={styles['readmore-btn']}/>
             </div>
             <div className={styles['culture__img-container3']}></div>
         </Fragment>
