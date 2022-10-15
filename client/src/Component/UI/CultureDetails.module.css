@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 .culture__main-img{
     height:40rem;
     width: 100%;
@@ -7,13 +11,13 @@
 }
 
 .culture__img-container2{
+    display: inline-block;
+    width: 50%;
+    height: 450px;
     background: url('../../images/featuredimg2.jpg');
     background-position: 5% 15%;
     background-size:cover;
     background-repeat: none;
-    display: inline-block;
-    height: 450px;
-    width: 50%;
     vertical-align: bottom;
 }
 .culture__milan-details > h1{
@@ -21,19 +25,18 @@
 }
 .culture__milan-details{
     display:inline-block;
-    vertical-align:top;
-    height: 400px;
     width:50%;
+    height: 400px;
+    vertical-align:top;
 }
 .culture__title{
+    margin: 0 auto;
     text-align: center;
     text-decoration: underline;
-    margin: 0 auto;
+    font-family: 'Plaster', cursive;
+
 }
-.culture__milan-paragraph{
-    padding: 0 30px;
-    margin-top: 2%;
-}
+.culture__milan-paragraph,
 .culture__paris-paragraph{
     padding: 0 30px;
     margin-top: 2%;
@@ -45,44 +48,43 @@
 }
 
 .culture__paris-details{
-    /* background-color: red; */
     display: inline-block;
-    vertical-align: bottom;
-    height: 400px;
     width:50%;
+    height: 400px;
+    vertical-align: bottom;
 }
 
 .readmore-btn{
     display: block;
     margin: 10% auto;
+    border:none;
     color:#ffffff;
     background-color: #000000;
-    border:none;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .readmore-btn:active{
-    background-color: #b4b4b4;
     color:#000000;
+    background-color: #b4b4b4;
     text-decoration: underline;
 }
 .culture__img-container3{
     display:inline-block;
+    width: 50%;
+    height: 450px;
+    margin-top:0;
+    margin-bottom: 0;
     position:relative;
     background: url('../../images/femalemodel9.jpg');
     background-position: 5% 80%;
     background-size:cover;
     background-repeat: none;
     filter: grayscale(100%);
-    width: 50%;
-    height: 450px;
-    margin-top:0;
-    margin-bottom: 0;
     vertical-align: bottom;
-
 }
 .culture__milan-img{
     display: block;
     margin-top: 0;
-    height:450px;
     width:10%;
+    height:450px;
 }
