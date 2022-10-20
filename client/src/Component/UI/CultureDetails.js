@@ -23,6 +23,7 @@ const CultureDetails = (props) =>{
                 </p>
                 <ReadMore className={styles['readmore-btn']}/>
             </div>
+            <div className={styles['culture__img-milan2']}></div>    
             <div className={styles['culture__paris-details']}>
                <h1 className={styles['culture__title']}>Paris</h1>
                <p className={styles['culture__paris-paragraph']}>
