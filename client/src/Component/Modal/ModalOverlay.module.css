@@ -8,3 +8,12 @@
     z-index: 500;
     border-radius: 10px;
 }
+
+@media(max-width:730px){
+    .modal{
+        top:10%;
+        left:0;
+        height: 90vh;
+        width:100vw;
+    }
+}

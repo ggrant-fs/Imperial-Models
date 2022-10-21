@@ -8,9 +8,11 @@
     filter:grayscale(100%)
 }
 
+
 .subscriber{
     height: 300px;
 }
+
 
 .subscriber__form{
     display:inline-block;
@@ -19,6 +21,7 @@
     background-color: #000000;
     border-radius: 0 10px 10px 0;
 }
+
 
 .testDiv{
     display:inline-block;
@@ -40,8 +43,8 @@
     padding-left:10%;
     padding-right:10%;
     /* padding-top:2%; */
-    font-size: 27px;
-    font-family: 'Kaushan Script', cursive;
+    /* font-size: 27px; */
+    font: 27px 'Kaushan Script', cursive;
     text-align: center; 
     color:#ffffff; 
  } 
@@ -68,4 +71,37 @@
 
 .subscriber-btn-container{
     padding-top:20px;
+}
+
+
+@media(max-width:730px){
+    .modal-image{
+        display: block;
+        height: 60vh;;
+        width:100%;
+        border-radius:0;
+    }
+
+    .subscriber__form{
+        display:block;
+        width:100%;
+        border-radius: 0;
+    }
+
+    .subscriber__content{
+        padding-top:10%;
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
+
+
+@media(max-width:730px){
+    .subscriber-btn-container{
+        padding-top:0;
+    }
+
+    .subscriber__btn{
+        margin-top:0;
+    }
 }

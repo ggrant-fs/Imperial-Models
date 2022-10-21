@@ -35,17 +35,14 @@
 }
 
 .culture__milan-details{
-    /* display:inline-block;
-    width:50%;
-    height: 400px; */
     vertical-align:top;
-    /* text-align: center; */
 }
 .culture__title{
     margin: 0 auto;
     text-align: center;
     text-decoration: underline;
     font-family: 'Plaster', cursive;
+    letter-spacing: 2px;
 
 }
 .culture__milan-paragraph1,
@@ -62,9 +59,6 @@
 }
 
 .culture__paris-details{
-    /* display: inline-block;
-    width:50%;
-    height: 400px; */
     vertical-align: bottom;
 }
 
