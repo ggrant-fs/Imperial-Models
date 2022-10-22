@@ -71,7 +71,6 @@
 
 
 @media(max-width:730px){
-
     .modal-image,
     .subscriber__form{
         display:block; 
@@ -79,18 +78,9 @@
         border-radius: 0;
     }
     .modal-image{
-        /* display: block;
-        width:100%; */
         height: 60vh;;
         border-radius:0;
     }
-
-    /* .subscriber__form{
-        display:block;
-        width:100%;
-        border-radius: 0;
-    } */
-
     .subscriber__content{
         padding-top:10%;
         margin-top:0;
