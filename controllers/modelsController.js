@@ -1,4 +1,6 @@
 const Model = require('./../models/models');
+const CatchErr =require('./../utils/catchErr')
+const errorHandler = require('./../utils/errorHandler');
 
 
 exports.getAllModels = async(req,res) =>{

@@ -16,7 +16,7 @@ app.use('/api/v1/blogpost',blogRouter);
 
 //error handler
 app.all('*',(req,res,next)=>{
-    
+   return  next(`an error occured the submitted url is not valid:${req.originalUrl}`)
 })
 
 app.use((err,req,res,next)=>{

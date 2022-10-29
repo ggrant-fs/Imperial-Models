@@ -53,9 +53,10 @@
 }
 
 .culture__paris-paragraph + p{
-   padding-left: 30px;
-   padding-right: 30px;
+    padding-left: 30px;
+   padding-right: 30px; 
    text-align: center;
+
 }
 
 .culture__paris-details{

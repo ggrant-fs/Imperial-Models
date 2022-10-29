@@ -27,7 +27,8 @@ const CultureDetails = (props) =>{
             <div className={styles['culture__paris-details']}>
                <h1 className={styles['culture__title']}>Paris</h1>
                <p className={styles['culture__paris-paragraph']}>
-                Eget aliquet nibh praesent tristique magna sit amet. Mauris cursus 
+                Eget aliquet nibh praesent tristique magna sit amet. Mauris 
+                cursus 
                 mattis molestie a iaculis at. Porta lorem mollis aliquam ut porttitor
                 leo a. Ullamcorper a lacus vestibulum sed arcu. Magna eget est lorem
                 ipsum. Tortor condimentum lacinia quis vel eros donec ac odio tempor.
