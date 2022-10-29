@@ -1,6 +1,5 @@
-import Header from "../Component/UI/Header";
 import { Fragment, useState, useEffect } from 'react';
-import Footer from "../Component/UI/Footer";
+import Layout from '../Component/UI/Layout';
 import FeaturedImg from '../Component/UI/FeaturedImg';
 import Introduction from '../Component/UI/Introduction';
 import SectionDivider from '../Component/UI/SectionDivider';
@@ -23,7 +22,7 @@ const Home = (props) =>{
 
  return (
         <Fragment>
-           <Header />
+           <Layout>
            <main>
             {displayModal && <NewSubscriber onClose={hideModalHandler}/>}
              <FeaturedImg />
@@ -40,7 +39,7 @@ const Home = (props) =>{
             </SectionDivider>
            </main>
             <CultureDetails/>
-           <Footer/>
+            </Layout>
         </Fragment>
     )
 }
