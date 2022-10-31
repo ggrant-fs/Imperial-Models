@@ -1,3 +1,6 @@
 .main-img{
-    background-color: red;
+    background: url('../images/femalemodel14.jpg'); 
+    background-position:0% 15%;
+    background-size: cover;
+    background-repeat: none; 
 }

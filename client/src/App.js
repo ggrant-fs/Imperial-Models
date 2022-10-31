@@ -1,14 +1,14 @@
 import { Fragment } from 'react';
 import React from 'react';
-import Home from './Pages/Home';
 // import FemaleModels from './Pages/FemaleModels';
-// import SubscriptionModal from './Component/Modal/SubscriptionModal';
+import MaleModels from './Pages/MaleModels';
+
 
 function App() {
   return (
     <Fragment>
       {/* <FemaleModels/> */}
-      <Home />
+      <MaleModels/>
     </Fragment>
   )
 }

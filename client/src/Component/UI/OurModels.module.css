@@ -1,0 +1,20 @@
+.container{
+    height: 300px;
+}
+
+.models{
+    display:inline-block;
+    background-color: aqua;
+    height:300px;
+    width: 33%;
+}
+
+.models:nth-of-type(2){
+    background-color: red;
+    margin-left: .5%;
+    margin-right:.5%
+}
+
+.models:nth-of-type(3){
+    background-color: green;
+}
