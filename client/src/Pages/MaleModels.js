@@ -9,7 +9,7 @@ const MaleModels = (props) =>{
         <Fragment>
           <Layout>
             <MainImg className={styles['main-img']}/>
-            <OurModels/>
+            {/* <OurModels/> */}
           </Layout>
         </Fragment>
       )

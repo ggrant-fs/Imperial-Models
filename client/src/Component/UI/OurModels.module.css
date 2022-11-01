@@ -4,17 +4,21 @@
 
 .models{
     display:inline-block;
-    background-color: aqua;
+    vertical-align: top;
     height:300px;
     width: 33%;
 }
 
+.imgtag{
+    height:300px;
+    width:100%
+}
+
 .models:nth-of-type(2){
-    background-color: red;
-    margin-left: .5%;
-    margin-right:.5%
+   background-position: 5px 50px;
+   filter:grayscale(100%)
 }
 
 .models:nth-of-type(3){
-    background-color: green;
+    filter:grayscale(100%)
 }
