@@ -8,7 +8,7 @@ const OurModels = (props)=>{
     return (
       <Fragment>
       {imgs.map((img)=>(
-            <div>
+            <div className={styles.container}>
                <div className={styles.models}>
                 {<img className={styles.imgtag}src={img.images} alt=""/>}
                </div>

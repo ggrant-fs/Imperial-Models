@@ -1,5 +1,7 @@
 .container{
     height: 300px;
+    margin-top:.5%;
+    margin-bottom:.5%;
 }
 
 .models{
@@ -16,6 +18,8 @@
 
 .models:nth-of-type(2){
    background-position: 5px 50px;
+   margin-left:.5%;
+   margin-right:.5%;
    filter:grayscale(100%)
 }
 
