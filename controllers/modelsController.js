@@ -3,8 +3,8 @@ const CatchErr =require('./../utils/catchErr')
 const errorHandler = require('./../utils/errorHandler');
 
 
-exports.getAllModels = async(req,res) =>{
-    try{
+exports.getAllModels = CatchErr(async(req,res,next) =>{
+    // try{
          const models = await Model.find();
          res.status(200).json({
             status:'success',
@@ -13,13 +13,15 @@ exports.getAllModels = async(req,res) =>{
                 models
             }
          })
-    }catch(err){
-        res.status(500).json({
-            status:'fail',
-            message:err
-        });
-    }
-}
+    // }
+    
+    // catch(err){
+    //     res.status(500).json({
+    //         status:'fail',
+    //         message:err
+    //     });
+    // }
+})
 
 
 exports.getAllMaleModels= async(req,res) =>{
