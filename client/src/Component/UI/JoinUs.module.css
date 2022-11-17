@@ -11,7 +11,8 @@
     display:block;
     width: 70vw;
     height:350px;
-    background-color: rgba(200, 195, 195, 0.673);
+    /* background-color: rgba(200, 195, 195, 0.673); */
+    background-image: linear-gradient( to top right, rgba(163, 160, 160, 0.709) , rgba(0, 0, 0, 0.792));
     clip-path: polygon(0 0, 100% 0%, 60% 100%, 0 100%);
     z-index:10;
 }
