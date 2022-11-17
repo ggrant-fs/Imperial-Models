@@ -1,0 +1,17 @@
+.joinUs{
+    height: 350px;
+    background-size: cover;
+    background-image: url('../../images/femalemodel17.jpg');
+    background-position: 0% 45%;
+    margin-bottom: .5%;
+    filter:grayscale(100%)
+}
+
+.joinUs__content{
+    display:block;
+    width: 70vw;
+    height:350px;
+    background-color: rgba(200, 195, 195, 0.673);
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0 100%);
+    z-index:10;
+}

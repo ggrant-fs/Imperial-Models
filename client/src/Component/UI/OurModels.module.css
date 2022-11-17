@@ -26,3 +26,11 @@
 .models:nth-of-type(3){
     filter:grayscale(100%)
 }
+
+@media(max-width:630px){
+    .container,
+    .imgtag,
+    .models{
+        height: 250px;
+    }
+}
