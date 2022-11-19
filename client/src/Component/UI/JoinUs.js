@@ -7,6 +7,7 @@ const JoinUs = (props)=>{
             <div className={`${styles['joinUs']} ${styles[props.className]}`}>
                 <div className={styles['joinUs__content']}>
                     <h1> Join New York City's Number One Model Mangement Agency</h1>
+                    <button className={styles['joinUs__button']}>Join us </button>
                 </div>
             </div>
         </Fragment>

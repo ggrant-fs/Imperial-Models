@@ -6,9 +6,7 @@
     margin-bottom: .5%;
     filter:grayscale(100%)
 }
-h1{
-    color:green;
-}
+
 .joinUs__content{
     display:block;
     width: 70vw;
@@ -30,5 +28,17 @@ h1{
 }
 
 .joinUs__button{
-    
+   display: block;
+   width: 100px;
+   height:30px;
+   margin: 10% 20%;
+   border-radius: 5px;
+   border:none;
+   font: 15px 'Aboreto', cursive;
+   cursor: pointer;
+}
+
+.joinUs__button:active{
+   color:#ffffff;
+   background-color: #000000;
 }
