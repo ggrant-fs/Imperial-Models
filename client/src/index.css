@@ -1,3 +1,5 @@
+@import url('https://css.gg/arrow-left-o.css');
+@import url('https://css.gg/arrow-right-o.css');
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
@@ -15,3 +17,9 @@ body {
 main{
   font-size:1rem;
 }
+/* 
+.gg-arrow-right-o,
+.gg-arrow-left-o{
+  --ggs: 1.5;
+  color:white;
+} */

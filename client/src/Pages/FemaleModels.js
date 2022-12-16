@@ -20,9 +20,10 @@ const FemaleModels = (props) =>{
        <Fragment>
          <main>
           <Layout>
+            {/* need to raise state from Mainimg component to change 
+            the background image state when arrows are clicked */}
              <Mainimg className={styles['main-img']}/>
              <OurModels imgs={modelImgs}/>
-             {/* we're the background via props to the JoinUs componenet */}
              <JoinUs/>
           </Layout>
          </main>

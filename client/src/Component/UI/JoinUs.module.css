@@ -26,7 +26,11 @@
     font-family: 'Aboreto', cursive;
     font-style: italic;
 }
-
+@media(max-width:650px){
+    .joinUs__content > h1{
+       width:300px; 
+    }
+}
 .joinUs__button{
    display: block;
    width: 100px;
@@ -41,4 +45,10 @@
 .joinUs__button:active{
    color:#ffffff;
    background-color: #000000;
+}
+
+.gg-arrow-left-o,
+.gg-arrow-right-o{
+    --ggs: 10;
+    color:white;
 }

@@ -1,15 +1,24 @@
-import { Fragment } from 'react';
-import React from 'react';
+// import React,{ Fragment } from 'react';
+import {Route} from 'react-router-dom'
+import Home from './Pages/Home';
+import MaleModels from './Pages/MaleModels';
 import FemaleModels from './Pages/FemaleModels';
-// import MaleModels from './Pages/MaleModels';
 
 
 function App() {
   return (
-    <Fragment>
+    <div>
+     <Route path="/home">
+      <Home/>
+     </Route>
+     <Route path="/models-females">
       <FemaleModels/>
-      {/* <MaleModels/> */}
-    </Fragment>
+     </Route>
+     <Route path="/models-males">
+       <MaleModels/>
+     </Route>
+    </div>
+
   )
 }
 
