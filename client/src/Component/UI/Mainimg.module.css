@@ -2,3 +2,13 @@
     height: 400px;
     filter:grayscale(100%);
 }
+@media(max-width:650px){
+    .main-image-desktop{
+        display:none;
+    }
+}
+@media(min-width:650px){
+    .main-image-mobile{
+        display:none;
+    }
+}

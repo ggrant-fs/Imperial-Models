@@ -6,6 +6,7 @@ import JoinUs from "../Component/UI/JoinUs";
 import femImg1 from '../images/femalemodel13.jpg';
 import femImg2 from '../images/femalemodel16.jpg';
 import femImg3 from '../images/femalemodel11.jpg';
+import testimg from '../images/femalemodel19.jpg';
 import styles from './FemaleModels.module.css';
 
 const FemaleModels = (props) =>{
@@ -20,9 +21,7 @@ const FemaleModels = (props) =>{
        <Fragment>
          <main>
           <Layout>
-            {/* need to raise state from Mainimg component to change 
-            the background image state when arrows are clicked */}
-             <Mainimg className={styles['main-img']}/>
+             <Mainimg images={testimg} className={`${styles["test-img"]} ${styles["main-img"]}`}/>
              <OurModels imgs={modelImgs}/>
              <JoinUs/>
           </Layout>
