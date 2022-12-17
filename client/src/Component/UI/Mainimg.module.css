@@ -1,13 +1,13 @@
 .default-styling{
-    height: 400px;
+    height: 25rem;
     filter:grayscale(100%);
 }
-@media(max-width:650px){
+@media(max-width:40rem){
     .main-image-desktop{
         display:none;
     }
 }
-@media(min-width:650px){
+@media(min-width:40rem){
     .main-image-mobile{
         display:none;
     }
