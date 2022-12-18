@@ -1,8 +1,23 @@
-.main-header{
+.header{
    height: 25px;
    background-color: white;
    position: sticky;
    top:0;
    left:0;
    z-index:100;
+}
+.header__logo{
+   display: inline-block;
+}
+.header__menu__btn {
+   display: inline-block;
+   margin-bottom: 7px;
+   position: relative;
+   left:90%;
+}
+
+.header__menu__btn:hover,
+.header__menu__btn:active,
+.gg-menu{
+   cursor: pointer;
 }

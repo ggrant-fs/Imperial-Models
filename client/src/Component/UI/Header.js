@@ -6,8 +6,11 @@ import styles from './Header.module.css';
 const Header = (props) =>{
     return (
         <Fragment>
-        <header className={styles['main-header']}>
-           <MenuButton className={styles['main-header__menu-btn']}/>
+        <header className={styles['header']}>
+           <MenuButton className={styles['header__logo']}/>
+           <div className={styles["header__menu__btn"]}>
+           <i className="gg-menu"></i>
+           </div>
         </header>
         </Fragment>
     )
