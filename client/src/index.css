@@ -18,9 +18,12 @@ body {
 main{
   font-size:1rem;
 }
-/* 
-.gg-arrow-right-o,
-.gg-arrow-left-o{
-  --ggs: 1.5;
-  color:white;
-} */
+
+.gg-menu{
+  cursor: pointer;
+}
+
+.header__menu__btn:active,
+.gg-menu:active{
+   color: #c6c6c6;
+}

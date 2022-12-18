@@ -9,7 +9,7 @@ const Header = (props) =>{
         <header className={styles['header']}>
            <MenuButton className={styles['header__logo']}/>
            <div className={styles["header__menu__btn"]}>
-           <i className="gg-menu"></i>
+           <i class="gg-menu"></i>
            </div>
         </header>
         {/* ========================================
