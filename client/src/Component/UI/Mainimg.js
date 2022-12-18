@@ -1,5 +1,5 @@
 import {Fragment} from 'react';
-import styles from './Mainimg.module.css';
+import styles from './MainImg.module.css';
 
 const MainImg = (props) =>{
     return (

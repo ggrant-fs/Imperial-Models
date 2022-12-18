@@ -8,13 +8,13 @@ import FemaleModels from './Pages/FemaleModels';
 function App() {
   return (
     <div>
-     <Route path="/home">
+     <Route exact path="/">
       <Home/>
      </Route>
-     <Route path="/models-females">
+     <Route exact path="/models-females">
       <FemaleModels/>
      </Route>
-     <Route path="/models-males">
+     <Route exact path="/models-males">
        <MaleModels/>
      </Route>
     </div>
