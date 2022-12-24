@@ -8,9 +8,10 @@ const Nav = (props) =>{
             <nav className={styles.nav}>
                 <ul>
                     <li><NavLink to='/'>Home</NavLink></li>
+                    <li><NavLink to='#'>About</NavLink></li>
                     <li><NavLink to='/models-females'>Models</NavLink></li>
                     <li><NavLink to='/models-males'>Male Models</NavLink></li>
-                    {/* <li><NavLink to='/contact'>Contact</NavLink></li> */}
+                    <li><NavLink to='#'>Contact</NavLink></li>
                 </ul>
             </nav>
         </Fragment>
