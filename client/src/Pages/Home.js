@@ -10,6 +10,7 @@ import styles from './Home.module.css';
 
 const Home = (props) =>{
     const [displayModal, setDisplayModal] =useState(false);
+    
 
     useEffect(()=>{
          const timer = setTimeout(()=> setDisplayModal(true), 20000);
@@ -20,9 +21,10 @@ const Home = (props) =>{
          setDisplayModal(false);
     }
 
+
  return (
         <Fragment>
-           <Layout>
+         <Layout >
            <main>
             {displayModal && <NewSubscriber onClose={hideModalHandler}/>}
              <FeaturedImg />
@@ -39,7 +41,7 @@ const Home = (props) =>{
             </SectionDivider>
            </main>
             <CultureDetails/>
-            </Layout>
+        </Layout>
         </Fragment>
     )
 }

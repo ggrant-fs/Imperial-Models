@@ -4,9 +4,7 @@ import styles from './NewSubscriber.module.css';
 
 const NewSubscriber = (props) =>{
 
-   const btnHandleClick =(event)=>{
-      event.preventDefault();
-   }
+
     return (
         <Modal onClose={props.onClose}>
           <div className={styles.subscriber}>
@@ -16,7 +14,7 @@ const NewSubscriber = (props) =>{
                     <p className={styles.subscriber__content}>Subscribe for a chance to join us at this years New York Fashion Week!</p>
               </div>
               <div className={styles['subscriber-btn-container']}>
-                 <button className={styles.subscriber__btn}  onClick={btnHandleClick}>Subscribe</button>
+                 <button className={styles.subscriber__btn} >Subscribe</button>
               </div>
             </form>
           </div>

@@ -9,6 +9,8 @@ const Modal =(props)=>{
 
     return(
         <Fragment>
+             {/* the backdrop is tranparent div that separates the modal and the rest of the applicaiton
+             the ModalOverlay wrapper child props  */}
              {ReactDOM.createPortal(<Backdrop onClose={props.onClose}/>, portal)}
              {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portal)}
         </Fragment>
