@@ -7,6 +7,7 @@ const OurModels = (props)=>{
 
     return (
       <Fragment>
+        {/* need to include a key for the images prop */}
       {imgs.map((img)=>(
             <div className={styles.container}>
                <div className={styles.models}>

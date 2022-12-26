@@ -6,7 +6,8 @@ import Footer from './Footer';
 const Layout = props =>{
     const [displayNav, setDisplayNav] =useState(false);  
  
-    const displayNavHandler = () =>{
+    const displayNavHandler = (event) =>{
+        event.preventDefault();
          if(displayNav === false){
              setDisplayNav((prevState)=> true);
          }else{

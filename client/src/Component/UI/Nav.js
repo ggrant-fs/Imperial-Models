@@ -7,11 +7,11 @@ const Nav = (props) =>{
         <Fragment>
             <nav className={styles.nav}>
                 <ul>
-                    <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='#'>About</NavLink></li>
-                    <li><NavLink to='/models-females'>Models</NavLink></li>
-                    <li><NavLink to='/models-males'>Male Models</NavLink></li>
-                    <li><NavLink to='#'>Contact</NavLink></li>
+                    <li><NavLink to='/' activeClassName={styles.activeStyling}>Home</NavLink></li>
+                    <li><NavLink to='#' activeClassName={styles.activeStyling}>About</NavLink></li>
+                    <li><NavLink to='/models-females' activeClassName={styles.activeStyling}>Models</NavLink></li>
+                    <li><NavLink to='/models-males' activeClassName={styles.activeStyling}>Male Models</NavLink></li>
+                    <li><NavLink to='#' activeClassName={styles.activeStyling}>Contact</NavLink></li>
                 </ul>
             </nav>
         </Fragment>
