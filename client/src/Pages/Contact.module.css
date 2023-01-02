@@ -1,0 +1,16 @@
+.form{
+    display: inline-block;
+    width:400px;
+    height: 450px;
+    background-color: aqua;
+}
+
+.container{
+    display: inline-block;
+    width:calc(100% - 400px);
+}
+.contact-img{
+   width: 100%;
+   height: 450px;
+   filter: grayscale(100%);
+}
