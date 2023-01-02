@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home';
 import MaleModels from './Pages/MaleModels';
 import FemaleModels from './Pages/FemaleModels';
-// import Contact from './Pages/Contact';
+import Contact from './Pages/Contact';
 
 function App() {
 
@@ -20,9 +20,9 @@ function App() {
        <Route exact path="/models-males">
          <MaleModels/>
        </Route>
-     {/* <Route path='/contact'>
+     <Route path='/contact'>
       <Contact/>
-     </Route> */}
+     </Route>
        <Route path='*'>
           {/* 404 page componene */}
        </Route>

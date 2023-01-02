@@ -1,11 +1,11 @@
-import { Fragment} from "react";
+import { Fragment,useEffect} from "react";
 import styles from './Contact.module.css';
-import pic from '../images/featuredimg1.jpg';
+import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
 
 
 const Contact = (props) =>{
-
+  
     return (
         <Fragment>
           <Layout>
