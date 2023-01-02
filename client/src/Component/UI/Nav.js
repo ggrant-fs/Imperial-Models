@@ -8,11 +8,11 @@ const Nav = (props) =>{
         <Fragment>
             <nav className={styles.nav} onClick={props.sideBar}>
                 <ul>
-                    <li><NavLink to='/' activeClassName={styles.activeStyling}>Home</NavLink></li>
-                    <li><NavLink to='#' activeClassName={styles.activeStyling}>About</NavLink></li>
-                    <li><NavLink to='/models-females' activeClassName={styles.activeStyling}>Models</NavLink></li>
-                    <li ><NavLink to='/models-males' activeClassName={styles.activeStyling} >Male Models</NavLink></li>
-                    <li><NavLink to='/contact' activeClassName={styles.activeStyling}>Contact</NavLink></li>
+                    <li><NavLink to='/home' activeClassName={styles.active}>Home</NavLink></li>
+                    <li><NavLink to='/contact' activeClassName={styles.active}>About</NavLink></li>
+                    <li><NavLink to='/models-females' activeClassName={styles.active}>Models</NavLink></li>
+                    <li ><NavLink to='/models-males' activeClassName={styles.active} >Male Models</NavLink></li>
+                    <li><NavLink to='/contact' activeClassName={styles.active}>Contact</NavLink></li>
                 </ul>
             </nav>
         </Fragment>
