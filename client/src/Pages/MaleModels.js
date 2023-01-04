@@ -1,4 +1,3 @@
-import { Fragment} from "react"
 import Layout from "../Component/UI/Layout";
 import MainImg from "../Component/UI/MainImg";
 import OurModels from "../Component/UI/OurModels";
@@ -17,12 +16,10 @@ const MaleModels = (props) =>{
     }
   ]
       return (
-        <Fragment>
           <Layout>
             <MainImg images={MainImgMobile} className={`${styles["male-img"]} ${styles["main-img"]}`}/>
             <OurModels imgs={modelImgs}/>
           </Layout>
-        </Fragment>
       )
 };
 
