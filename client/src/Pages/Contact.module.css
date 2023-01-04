@@ -1,13 +1,19 @@
+.content-container{
+    margin-bottom: -5px;
+}
+
 .form{
     display: inline-block;
     width:400px;
     height: 450px;
-    background-color: rgb(20, 20, 20);
+    background-image: linear-gradient(to bottom, rgb(77, 74, 74), rgb(0, 0, 0))
+    /* background-color: rgb(20, 20, 20); */
 }
 
 .container{
     display: inline-block;
     width:calc(100% - 400px);
+    vertical-align: bottom;
 }
 .contact-img{
    width: 100%;

@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '../Component/UI/Layout';
 import FeaturedImg from '../Component/UI/FeaturedImg';
 import Introduction from '../Component/UI/Introduction';
@@ -23,7 +23,6 @@ const Home = (props) =>{
 
 
  return (
-        <Fragment>
          <Layout >
            <main>
             {displayModal && <NewSubscriber onClose={hideModalHandler}/>}
@@ -42,7 +41,6 @@ const Home = (props) =>{
            </main>
             <CultureDetails/>
         </Layout>
-        </Fragment>
     )
 }
 
