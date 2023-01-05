@@ -2,12 +2,39 @@
     margin-bottom: -5px;
 }
 
+.label-container{
+    color:#d5d1d1;
+    display:inline-block;
+}
+.input-container{
+   display:inline-block;
+   margin-left: 2%;
+}
+
 .form{
     display: inline-block;
     width:400px;
     height: 450px;
     vertical-align: top;
-    background-image: linear-gradient(to bottom, rgb(77, 74, 74), rgb(0, 0, 0))
+    background-image: linear-gradient(to bottom, rgb(77, 74, 74), rgb(0, 0, 0));
+    padding-top:20%
+}
+
+.input-container input[id="first-name"],
+.input-container input[id="last-name"],
+.input-container input[id="email"],
+.input-container input[id="phone-number"]{
+    background-color: transparent;
+    border-top: none;
+    border-right:none;
+    border-left:none;
+    border-color:#7b7a7a;
+    width: 300px;
+}
+
+.label-container label[for="email"],
+.label-container label[for="phone-number"]{
+   margin-left:33px;
 }
 
 .container{

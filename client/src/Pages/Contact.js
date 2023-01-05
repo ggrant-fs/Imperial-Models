@@ -19,24 +19,28 @@ const Contact = (props) =>{
                     <div className={styles["input-container"]}>
                       <input type='text' id="first-name"/>
                     </div>
+                    <br/>
                     <div className={styles["label-container"]}>
                       <label htmlFor="last-name">Last Name:</label>
                     </div>
                     <div className={styles["input-container"]}>
                       <input type='text' id="last-name"/>
                     </div>
+                    <br/>
                     <div className={styles["label-container"]}>
                       <label htmlFor="email">Email:</label>
                     </div>
                     <div className={styles["input-container"]}>
                       <input type='email' id="email"/>
                     </div>
+                    <br/>
                     <div className={styles["label-container"]}>
                       <label htmlFor="phone-number">Phone:</label>
                     </div>
                     <div className={styles["input-container"]}>
                       <input type='tel' id='phone-number'/>
                     </div>
+                    <br/>
                     <button type='submit'>submit</button>
                   </form>
                   <div className={styles.container}>
