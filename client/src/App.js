@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch} from 'react-router-dom'
+import { Redirect, Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home';
 import MaleModels from './Pages/MaleModels';
 import FemaleModels from './Pages/FemaleModels';
@@ -11,6 +11,9 @@ function App() {
 
   return (
     <Switch>
+      <Route exact path='/'>
+         <Redirect to="/home" />
+      </Route>
        <Route exact path="/home">
          <Home/>
        </Route>

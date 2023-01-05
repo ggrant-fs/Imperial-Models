@@ -6,8 +6,8 @@
     display: inline-block;
     width:400px;
     height: 450px;
+    vertical-align: top;
     background-image: linear-gradient(to bottom, rgb(77, 74, 74), rgb(0, 0, 0))
-    /* background-color: rgb(20, 20, 20); */
 }
 
 .container{
