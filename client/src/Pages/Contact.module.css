@@ -2,34 +2,49 @@
     margin-bottom: -5px;
 }
 
-.label-container{
-    color:#d5d1d1;
-    display:inline-block;
-}
-.input-container{
-   display:inline-block;
-   margin-left: 2%;
-}
-
 form{
     display: inline-block;
     width:400px;
     height: 450px;
     vertical-align: top;
-    background-image: linear-gradient(to bottom, rgb(77, 74, 74), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, #4d4a4a, #000000);
     padding-top:20%
 }
 
-.testcontianer{
-    color:red;
-    display: inline-block;
+.label-wrapper{
+    color:#e0dddd;
 }
 
-form input[id='testlable2']{
-    display:inline-block;
-    background-color: aqua;
+label{
+   margin-left: 30px;
 }
 
+input {
+    margin-left:20px;
+    width: 250px;
+    background-color: transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+form > .label-wrapper:nth-child(2){
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+form > .label-wrapper:nth-child(3){
+    margin-left:28px;
+}
+
+form > .label-wrapper:nth-child(4){
+    margin-left:26.5px;
+    margin-top:10px;
+}
+
+.submit-btn{
+    display: block;
+    margin:20px auto;
+}
 
 .container{
     display: inline-block;

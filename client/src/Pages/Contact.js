@@ -13,13 +13,23 @@ const Contact = (props) =>{
             <main>
                <div className={styles["content-container"]}>
                   <form >
-                    <div className={styles.testcontianer}>
-                    <label htmlfor="first-name">first name</label>
-                    </div>
+                    <div className={styles["label-wrapper"]}>
+                    <label htmlfor="first-name">First Name</label>
                     <input type="text" id="first-name"/>
-                    <label htmlfor="last-name" >second name</label>
+                    </div>
+                    <div className={styles["label-wrapper"]}>
+                    <label htmlfor="last-name" >Last Name</label>
                     <input type="text" id="last-name" />
-
+                    </div>
+                    <div className={styles["label-wrapper"]}>
+                    <label htmlfor="email">Email</label>
+                    <input type="email" id="email"/>
+                    </div>
+                    <div className={styles["label-wrapper"]}>
+                    <label htmlFor='phone-number'>Phone</label>
+                    <input type="tel" id="phone-number"/>
+                    </div>
+                    <button type="submit" className={styles["submit-btn"]}>submit</button>
                   </form>
                   <div className={styles.container}>
                     <img className={styles["contact-img"]} src={pic} alt=''/>  
