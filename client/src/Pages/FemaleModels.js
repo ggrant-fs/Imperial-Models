@@ -1,5 +1,5 @@
 import Layout from '../Component/UI/Layout';
-import MainImg from '../Component/UI/MainImg';
+import MainImg from '../Component/UI/Mainimg';
 import OurModels from "../Component/UI/OurModels";
 import JoinUs from "../Component/UI/JoinUs";
 import femImg1 from '../images/femalemodel13.jpg';
