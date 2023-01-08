@@ -12,17 +12,42 @@ const [formValues, setFormValue] =useState({
    phoneNumber:''
 })
 
-const inputChangeHandler = event =>{
+const firstNameChangeHandler = event =>{
   event.preventDefault();
   setFormValue(prevState =>({
     ...prevState,
-      firstName:event.target.value
-    }))
+       firstName:event.target.value,
+      }));
+      console.log(event.target.value)
+}
+
+const lastNameChangeHandler = event =>{
+  event.preventDefault();
+  setFormValue((prevState=>({
+    ...prevState,
+       lastName:event.target.value
+  })));
+    console.log(event.target.value);
+}
+
+const emailChangeHandler = event =>{
+  event.preventDefault();
+  setFormValue((prevState=>({
+    ...prevState,
+       email:event.target.value
+  })));
+     console.log(event.target.value)
+}
+
+const phoneNumChangeHandler = event =>{
+  event.preventDefault();
+  setFormValue((prevState=>({
+    ...prevState,
+       phoneNumber:event.target.value
+  })))
     console.log(event.target.value)
 }
 
-
-   //submit form handler function
    
   
     return (
@@ -36,7 +61,7 @@ const inputChangeHandler = event =>{
                     type="text" 
                     id="first-name"
                     value={formValues.firstName}
-                    onChange={inputChangeHandler}
+                    onChange={firstNameChangeHandler}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -45,7 +70,7 @@ const inputChangeHandler = event =>{
                     type="text" 
                     id="last-name" 
                     value={formValues.lastName}
-                    onChange={inputChangeHandler}
+                    onChange={lastNameChangeHandler}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -54,7 +79,7 @@ const inputChangeHandler = event =>{
                     type="email" 
                     id="email"
                     value={formValues.email}
-                    onChange={inputChangeHandler}
+                    onChange={emailChangeHandler}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -63,7 +88,7 @@ const inputChangeHandler = event =>{
                     type="tel" 
                     id="phone-number"
                     value={formValues.phoneNumber}
-                    onChange={inputChangeHandler}
+                    onChange={phoneNumChangeHandler}
                     />
                     </div>
                     <button type="submit" className={styles["submit-btn"]}>submit</button>
