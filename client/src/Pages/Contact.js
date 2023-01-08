@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import styles from './Contact.module.css';
 import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
@@ -10,7 +10,20 @@ const [formValues, setFormValue] =useState({
    lastname:'',
    email:'',
    phoneNumber:''
-})
+});
+
+const postFormData = async() =>{
+   const url = '';
+   const response = await fetch(url,{
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json'
+    },
+    body:JSON.stringify(formValues)
+   });
+   const responseData = await response.json();
+   return responseData;
+}
 
 const firstNameChangeHandler = event =>{
   event.preventDefault();
