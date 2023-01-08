@@ -44,7 +44,9 @@ form > .label-wrapper:nth-child(4){
 
 .submit-btn{
     display: block;
-    margin:20px auto;
+    width:100px;
+    margin:25px auto;
+    font: 17px 'Poiret One', cursive;
 }
 
 .container{

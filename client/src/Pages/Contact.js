@@ -48,13 +48,17 @@ const phoneNumChangeHandler = event =>{
     console.log(event.target.value)
 }
 
+const submitHandler = event =>{
+  event.preventDefault();
+
+}
    
   
     return (
           <Layout>
             <main>
                <div className={styles["content-container"]}>
-                  <form >
+                  <form onSubmit={submitHandler}>
                     <div className={styles["label-wrapper"]}>
                     <label htmlfor="first-name">First Name</label>
                     <input 
