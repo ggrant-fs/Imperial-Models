@@ -1,29 +1,49 @@
-import {useState,useEffect} from 'react';
+import {useEffect, useState, useRef} from 'react';
 import styles from './Contact.module.css';
 import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
 
 
 const Contact = (props) =>{
-const [formValues, setFormValue] =useState({
+  const firstNameInput = useRef('');
+  const lastNameInput = useRef('');
+  const emailInput = useRef('');
+  const phoneNumberInput = useRef('');
+
+  const [formValues, setFormValue] =useState({
    firstName:'',
-   lastname:'',
+   lastName:'',
    email:'',
    phoneNumber:''
 });
 
-const postFormData = async() =>{
-   const url = '';
+const postData ={
+    firstName: firstNameInput.current.value,
+    lastName: lastNameInput.current.value,
+    email: emailInput.current.value,
+    phoneNumber: phoneNumberInput.current.value
+}
+
+
+const postRequest = async() =>{
+   const url = 'https://imperial-models-default-rtdb.firebaseio.com/contact.json';
    const response = await fetch(url,{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
     },
-    body:JSON.stringify(formValues)
+    
+    body:JSON.stringify(postData)
    });
    const responseData = await response.json();
-   return responseData;
-}
+   console.log(responseData)
+  }
+
+  useEffect(()=>{
+    postRequest()
+  },[])
+
+
 
 const firstNameChangeHandler = event =>{
   event.preventDefault();
@@ -31,7 +51,7 @@ const firstNameChangeHandler = event =>{
     ...prevState,
        firstName:event.target.value,
       }));
-      console.log(event.target.value)
+console.log(event.target.value)
 }
 
 const lastNameChangeHandler = event =>{
@@ -40,6 +60,7 @@ const lastNameChangeHandler = event =>{
     ...prevState,
        lastName:event.target.value
   })));
+  setFormValue('');
     console.log(event.target.value);
 }
 
@@ -49,6 +70,7 @@ const emailChangeHandler = event =>{
     ...prevState,
        email:event.target.value
   })));
+  setFormValue('');
      console.log(event.target.value)
 }
 
@@ -58,12 +80,18 @@ const phoneNumChangeHandler = event =>{
     ...prevState,
        phoneNumber:event.target.value
   })))
+  setFormValue('');
     console.log(event.target.value)
 }
 
 const submitHandler = event =>{
   event.preventDefault();
-
+  setFormValue(prevState=>({
+    ...prevState,firstName:'',
+    lastName:'',
+     email:'',
+     phoneNumber:''
+    }));   
 }
    
   
@@ -79,6 +107,7 @@ const submitHandler = event =>{
                     id="first-name"
                     value={formValues.firstName}
                     onChange={firstNameChangeHandler}
+                    ref={firstNameInput}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -88,6 +117,7 @@ const submitHandler = event =>{
                     id="last-name" 
                     value={formValues.lastName}
                     onChange={lastNameChangeHandler}
+                    ref={lastNameInput}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -97,6 +127,7 @@ const submitHandler = event =>{
                     id="email"
                     value={formValues.email}
                     onChange={emailChangeHandler}
+                    ref={emailInput}
                     />
                     </div>
                     <div className={styles["label-wrapper"]}>
@@ -106,9 +137,10 @@ const submitHandler = event =>{
                     id="phone-number"
                     value={formValues.phoneNumber}
                     onChange={phoneNumChangeHandler}
+                    ref={phoneNumberInput}
                     />
                     </div>
-                    <button type="submit" className={styles["submit-btn"]}>submit</button>
+                    <button type="submit" className={styles["submit-btn"]} onClick={postRequest}>submit</button>
                   </form>
                   <div className={styles.container}>
                     <img className={styles["contact-img"]} src={pic} alt=''/>  
