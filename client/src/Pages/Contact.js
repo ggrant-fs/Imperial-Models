@@ -2,6 +2,7 @@ import {useEffect, useState, useRef} from 'react';
 import styles from './Contact.module.css';
 import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
+// import { set } from 'mongoose';
 
 
 const Contact = (props) =>{
@@ -10,12 +11,17 @@ const Contact = (props) =>{
   const emailInput = useRef('');
   const phoneNumberInput = useRef('');
 
-  const [formValues, setFormValue] =useState({
-   firstName:'',
-   lastName:'',
-   email:'',
-   phoneNumber:''
-});
+//   const [formValues, setFormValue] =useState({
+//    firstName:'',
+//    lastName:'',
+//    email:'',
+//    phoneNumber:''
+// });
+
+const [firstName,setFirstName] =useState('');
+const [lastName,setLastName] =useState('');
+const [email,setEmail] = useState('');
+const [phoneNumber, setPhoneNumber] =useState('')
 
 const postData ={
     firstName: firstNameInput.current.value,
@@ -24,8 +30,12 @@ const postData ={
     phoneNumber: phoneNumberInput.current.value
 }
 
+useEffect(()=>{
+  postRequest()
+},[])
 
-const postRequest = async() =>{
+
+ async function postRequest (){
    const url = 'https://imperial-models-default-rtdb.firebaseio.com/contact.json';
    const response = await fetch(url,{
     method:'POST',
@@ -39,59 +49,37 @@ const postRequest = async() =>{
    console.log(responseData)
   }
 
-  useEffect(()=>{
-    postRequest()
-  },[])
-
-
 
 const firstNameChangeHandler = event =>{
   event.preventDefault();
-  setFormValue(prevState =>({
-    ...prevState,
-       firstName:event.target.value,
-      }));
+  setFirstName(event.target.value);
 console.log(event.target.value)
 }
 
 const lastNameChangeHandler = event =>{
   event.preventDefault();
-  setFormValue((prevState=>({
-    ...prevState,
-       lastName:event.target.value
-  })));
-  setFormValue('');
+  setLastName(event.target.value);
     console.log(event.target.value);
 }
 
 const emailChangeHandler = event =>{
   event.preventDefault();
-  setFormValue((prevState=>({
-    ...prevState,
-       email:event.target.value
-  })));
-  setFormValue('');
+  setEmail(event.target.value)
      console.log(event.target.value)
 }
 
 const phoneNumChangeHandler = event =>{
   event.preventDefault();
-  setFormValue((prevState=>({
-    ...prevState,
-       phoneNumber:event.target.value
-  })))
-  setFormValue('');
+  setPhoneNumber(event.target.value)
     console.log(event.target.value)
 }
 
 const submitHandler = event =>{
   event.preventDefault();
-  setFormValue(prevState=>({
-    ...prevState,firstName:'',
-    lastName:'',
-     email:'',
-     phoneNumber:''
-    }));   
+  setFirstName('');
+  setLastName('');
+  setEmail('');
+  setPhoneNumber('');
 }
    
   
@@ -105,7 +93,7 @@ const submitHandler = event =>{
                     <input 
                     type="text" 
                     id="first-name"
-                    value={formValues.firstName}
+                    value={firstName}
                     onChange={firstNameChangeHandler}
                     ref={firstNameInput}
                     />
@@ -115,7 +103,7 @@ const submitHandler = event =>{
                     <input 
                     type="text" 
                     id="last-name" 
-                    value={formValues.lastName}
+                    value={lastName}
                     onChange={lastNameChangeHandler}
                     ref={lastNameInput}
                     />
@@ -125,7 +113,7 @@ const submitHandler = event =>{
                     <input 
                     type="email" 
                     id="email"
-                    value={formValues.email}
+                    value={email}
                     onChange={emailChangeHandler}
                     ref={emailInput}
                     />
@@ -135,7 +123,7 @@ const submitHandler = event =>{
                     <input 
                     type="tel" 
                     id="phone-number"
-                    value={formValues.phoneNumber}
+                    value={phoneNumber}
                     onChange={phoneNumChangeHandler}
                     ref={phoneNumberInput}
                     />
