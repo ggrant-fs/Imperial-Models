@@ -13,15 +13,17 @@
    display: inline-block;
    margin-bottom: 7px;
    position: relative;
-   left:75%;
+   left:80%;
 }
 
 .title-wrapper{
    display:inline-block;
-   margin-top: -15px;
+   margin-top: -33px;
    margin-bottom:0px;
    vertical-align: top;
    position:relative;
-   left:37%;
-
+   left:38.5%;
+   color:#000000;
+   font-size:25px;
+   font-family: 'Wire One', sans-serif;
 }
