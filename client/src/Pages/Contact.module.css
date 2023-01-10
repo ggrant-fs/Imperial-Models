@@ -8,7 +8,7 @@
 
 .contactUs{
     display:block;
-    width: 200px;
+    width: 150px;
     color:white;
     margin-top: -70px;
     margin-bottom: 40px;
@@ -42,6 +42,7 @@ input {
     border-top:none;
     border-left:none;
     border-right:none;
+    cursor: pointer;
 }
 .content > .label-wrapper:nth-child(2){
     margin-top: 10px;
@@ -62,7 +63,20 @@ input {
     display: block;
     width:100px;
     margin:25px auto;
+    padding-bottom:2px;
+    border:none;
     font: 17px 'Poiret One', cursive;
+}
+
+.submit-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.submit-btn:active{
+    color:#e0dddd;
+    background-color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .container{
