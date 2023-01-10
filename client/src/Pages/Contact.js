@@ -2,7 +2,6 @@ import {useEffect, useState, useRef} from 'react';
 import styles from './Contact.module.css';
 import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
-// import { set } from 'mongoose';
 
 
 const Contact = (props) =>{
@@ -11,7 +10,7 @@ const Contact = (props) =>{
   const emailInput = useRef('');
   const phoneNumberInput = useRef('');
 
-  
+
 const [firstName,setFirstName] =useState('');
 const [lastName,setLastName] =useState('');
 const [email,setEmail] = useState('');
@@ -82,6 +81,8 @@ const submitHandler = event =>{
             <main>
                <div className={styles["content-container"]}>
                   <form onSubmit={submitHandler}>
+                    <h1 className={styles.contactUs}>Contact Us</h1>
+                    <div className={styles["content"]}>
                     <div className={styles["label-wrapper"]}>
                     <label htmlfor="first-name">First Name</label>
                     <input 
@@ -121,6 +122,7 @@ const submitHandler = event =>{
                     onChange={phoneNumChangeHandler}
                     ref={phoneNumberInput}
                     />
+                    </div>
                     </div>
                     <button type="submit" className={styles["submit-btn"]} onClick={postRequest}>submit</button>
                   </form>

@@ -2,6 +2,20 @@
     margin-bottom: -5px;
 }
 
+.content{
+    width:100%;
+}
+
+.contactUs{
+    display:block;
+    width: 200px;
+    color:white;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 form{
     display: inline-block;
     width:400px;
@@ -29,16 +43,17 @@ input {
     border-left:none;
     border-right:none;
 }
-form > .label-wrapper:nth-child(2){
+.content > .label-wrapper:nth-child(2){
     margin-top: 10px;
     margin-bottom:10px;
 }
 
-form > .label-wrapper:nth-child(3){
-    margin-left:28px;
+.content > .label-wrapper:nth-child(3){
+    margin-left:35px;
+ 
 }
 
-form > .label-wrapper:nth-child(4){
+.content > .label-wrapper:nth-child(4){
     margin-left:26.5px;
     margin-top:10px;
 }
