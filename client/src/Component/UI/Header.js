@@ -9,7 +9,7 @@ const Header = (props) =>{
         <Fragment>
         <header className={styles['header']}>
            <MenuButton className={styles['header__logo']} />
-           <div className={styles.test}>
+           <div className={styles["title-wrapper"]}>
            <h3 className={styles["header__title"]}>Imperial Models</h3>
            </div>
            <div className={styles["header__menu__btn"]} onClick={props.openNav}>
