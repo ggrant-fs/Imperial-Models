@@ -11,13 +11,7 @@ const Contact = (props) =>{
   const emailInput = useRef('');
   const phoneNumberInput = useRef('');
 
-//   const [formValues, setFormValue] =useState({
-//    firstName:'',
-//    lastName:'',
-//    email:'',
-//    phoneNumber:''
-// });
-
+  
 const [firstName,setFirstName] =useState('');
 const [lastName,setLastName] =useState('');
 const [email,setEmail] = useState('');
