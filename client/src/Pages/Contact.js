@@ -25,6 +25,7 @@ const postData ={
 
 useEffect(()=>{
   postRequest()
+  .catch(console.error())
 },[])
 
 
@@ -39,32 +40,27 @@ useEffect(()=>{
     body:JSON.stringify(postData)
    });
    const responseData = await response.json();
-   console.log(responseData)
   }
 
 
 const firstNameChangeHandler = event =>{
   event.preventDefault();
   setFirstName(event.target.value);
-console.log(event.target.value)
 }
 
 const lastNameChangeHandler = event =>{
   event.preventDefault();
   setLastName(event.target.value);
-    console.log(event.target.value);
 }
 
 const emailChangeHandler = event =>{
   event.preventDefault();
   setEmail(event.target.value)
-     console.log(event.target.value)
 }
 
 const phoneNumChangeHandler = event =>{
   event.preventDefault();
   setPhoneNumber(event.target.value)
-    console.log(event.target.value)
 }
 
 const submitHandler = event =>{
