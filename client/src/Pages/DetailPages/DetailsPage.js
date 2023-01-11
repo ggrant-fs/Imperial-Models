@@ -1,1 +1,0 @@
-//this compoenet will have the nested routes of the Milian detail page and the Paris Detail Page
