@@ -29,12 +29,15 @@
 .subscriber__cta{
     width:100%;
     height: 200px;
+    margin-top:-70px;
 }
 
 
 .subscriber__content{
     padding-left:10%;
     padding-right:10%;
+    margin-top: 0;
+    margin-bottom: 0;
     font: 27px 'Kaushan Script', cursive;
     text-align: center; 
     color:#ffffff; 
