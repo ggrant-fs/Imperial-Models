@@ -1,6 +1,7 @@
 import Layout from "../Component/UI/Layout";
 import MainImg from "../Component/UI/Mainimg";
 import OurModels from "../Component/UI/OurModels";
+import JoinUsMen from "../Component/UI/JoinUsMen";
 import MainImgMobile from "../images/malemodel2.jpg";
 import maleImg1 from "../images/malemodel3.jpg";
 import maleImg2 from "../images/malemodel4.jpg";
@@ -20,6 +21,7 @@ const MaleModels = (props) =>{
             <main>
             <MainImg images={MainImgMobile} className={`${styles["male-img"]} ${styles["main-img"]}`}/>
             <OurModels imgs={modelImgs}/>
+            <JoinUsMen/>
             </main>
           </Layout>
       )

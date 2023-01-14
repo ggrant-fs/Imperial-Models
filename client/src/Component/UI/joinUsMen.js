@@ -1,12 +1,15 @@
 import { Fragment } from "react";
-import styles from './joinUsMen.module.css';
+import styles from './JoinUsMen.module.css';
 
-const joinUsMen = (props) =>{
+const JoinUsMen = (props) =>{
     return (
         <Fragment>
-            <div className={styles.introduction}></div>
+            <div className={styles["intro-container"]}>
+              <div className={styles.intro}> </div>
+            </div>
+           
         </Fragment>
     )
 }
 
-export default joinUsMen;
+export default JoinUsMen;
