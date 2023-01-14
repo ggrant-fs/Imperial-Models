@@ -10,15 +10,17 @@ import styles from "./MaleModels.module.css";
 const MaleModels = (props) =>{
   const modelImgs = [
     {
-    images:maleImg1,
-      images2:maleImg2,
-      images3:maleImg3
+    image1:maleImg1,
+    image2:maleImg2,
+    image3:maleImg3
     }
   ]
       return (
           <Layout>
+            <main>
             <MainImg images={MainImgMobile} className={`${styles["male-img"]} ${styles["main-img"]}`}/>
             <OurModels imgs={modelImgs}/>
+            </main>
           </Layout>
       )
 };

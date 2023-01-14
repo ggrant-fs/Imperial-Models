@@ -8,21 +8,39 @@ import femImg3 from '../images/femalemodel11.jpg';
 import femImg19 from '../images/femalemodel19.jpg';
 import styles from './FemaleModels.module.css';
 
+
 const FemaleModels = (props) =>{
+
+
   const modelImgs = [
    {
-      images:femImg1,
-      images2:femImg2,
-      images3:femImg3
+      image1:femImg1,
+      image2:femImg2,
+      image3:femImg3
    }
-];
+]
+
+
+// useEffect(()=>{
+//     const fetchImage = async() =>{
+//         const url = "https://i.imgur.com/Al9JO85.jpg";
+//         const response = await fetch(url);
+//         const imageBlob = await response.blob();
+//         const imageURL = URL.createObjectURL(imageBlob);
+//         console.log(imageURL)
+//         setImage(imageURL);
+//     }
+//     fetchImage()
+//     .catch(console.error())
+// },[]);
+
     return (
           <Layout>
          <main>
              <MainImg images={femImg19} className={`${styles["fem-img"]} ${styles["main-img"]}`}/>
              <OurModels imgs={modelImgs}/>
              <JoinUs/>
-         </main>
+        </main>
           </Layout>
     )
 };
