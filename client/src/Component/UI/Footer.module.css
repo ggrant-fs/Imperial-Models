@@ -4,3 +4,27 @@
     bottom:0;
     left:0;
 }
+
+
+.items-container{
+    background-color: red;
+    display:inline-block;
+    width:100px;
+}
+
+ul{
+    padding:0;
+}
+.footer__item{
+  display:block;
+  color:white;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top:15px;
+  text-align: left;
+  font-family:'Julius Sans One', sans-serif;
+}
+
+.main-footer > .items-container:nth-child(2){
+    vertical-align: top;
+}
