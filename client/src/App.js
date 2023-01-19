@@ -1,16 +1,18 @@
-import React from 'react';
+import React,{Suspense} from 'react';
 import { Redirect, Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home';
-import MaleModels from './Pages/MaleModels';
-import FemaleModels from './Pages/FemaleModels';
-import Contact from './Pages/Contact';
+const MaleModels = React.lazy(()=> import('./Pages/MaleModels'));
+const FemaleModels = React.lazy(()=> import('./Pages/FemaleModels'));
+const Contact = React.lazy(()=> import ('./Pages/Contact'));
+// import LoadingSpinner from './Component/UI/LoadingSpinner';
 
 function App() {
 
-
-
   return (
-    <Switch>
+    <Suspense fallback={
+      <h1>....Page is loading</h1>
+    }>
+     <Switch>
       <Route exact path='/'>
          <Redirect to="/home" />
       </Route>
@@ -29,6 +31,7 @@ function App() {
        <Route path='*'>
        </Route>
      </Switch>
+    </Suspense>
   )
 }
 
