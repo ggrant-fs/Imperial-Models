@@ -4,6 +4,7 @@ import MainImg from "../Component/UI/Mainimg";
 import OurModels from "../Component/UI/OurModels";
 import JoinUsMen from "../Component/UI/JoinUsMen";
 import Models from '../Component/UI/Models';
+import SectionDivider from '../Component/UI/SectionDivider';
 import MainImgMobile from "../images/malemodel2.jpg";
 import maleImg1 from "../images/malemodel3.jpg";
 import maleImg2 from "../images/malemodel4.jpg";
@@ -55,6 +56,11 @@ const MaleModels = (props) =>{
             <MainImg images={MainImgMobile} className={`${styles["male-img"]} ${styles["main-img"]}`}/>
             <OurModels imgs={modelImgs}/>
             <JoinUsMen/>
+            <SectionDivider>
+              <div>
+                <h3 className={styles['section-block_title']}>Our Men</h3>
+              </div>
+            </SectionDivider>
             <Models pics={images}/>
             </main>
           </Layout>
