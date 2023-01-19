@@ -21,3 +21,12 @@
   width: 200px;
   height:200px;
 }
+
+.section-block_title{
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 20px;
+  vertical-align: center;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+}
