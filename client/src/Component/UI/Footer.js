@@ -6,6 +6,7 @@ const Footer = (props) =>{
     return (
         <Fragment>
           <footer className={styles['main-footer']}>
+            <h2 className={styles["main-footer__title"]}>Imperial Models</h2>
             <div className={styles["items-container"]}>
               <ul>
                 <li className={styles["footer__item"]}>Newsletter</li>
@@ -21,8 +22,10 @@ const Footer = (props) =>{
               <li className={styles["footer__item"]}>Runway</li>
               <li className={styles["footer__item"]}>Milan</li>
               <li className={styles["footer__item"]}>Paris</li>
+              <li className={styles["footer__item"]}>New York</li>
              </ul>
             </div>
+            {/* <hr/> */}
           </footer>
         </Fragment>
     )

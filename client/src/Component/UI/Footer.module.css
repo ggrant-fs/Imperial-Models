@@ -5,10 +5,22 @@
     left:0;
 }
 
+.main-footer__title{
+    display: inline-block;
+    width: 170px;
+    height: 30px;
+    margin-top: 25px;
+    padding-left:20px;
+    color:white;
+    font: 40px 'Wire One', sans-serif;
+    vertical-align: top;
+    /* text-decoration: underline 1px; */
+}
 
 .items-container{
-    background-color: red;
     display:inline-block;
+    position: relative;
+    left: 50%;
     width:100px;
 }
 
@@ -22,7 +34,13 @@ ul{
   padding-right: 0;
   padding-top:15px;
   text-align: left;
-  font-family:'Julius Sans One', sans-serif;
+  font: 10px 'Julius Sans One', sans-serif;
+  cursor: pointer;
+}
+
+.main-footer > .items-container:nth-child(1){
+    vertical-align: top;
+    margin-right:20px;
 }
 
 .main-footer > .items-container:nth-child(2){
