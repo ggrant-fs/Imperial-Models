@@ -89,3 +89,36 @@ input {
    height: 450px;
    filter: grayscale(100%);
 }
+
+@media(max-width:660px){
+    .container,
+    .contact-img{
+      display: none;
+    }
+
+    .contactUs{
+        margin-top: -20px;
+    }
+
+}
+
+@media(max-width:660px){
+    form{
+        width:100%;
+    }
+
+    label{
+        font-size:18px
+    }
+
+    input{
+        width:200px;
+    }
+
+    .submit-btn{
+        width:150px;
+        height:30px;
+        margin:50px auto;
+        font-size:25px;
+    }
+}
