@@ -9,3 +9,17 @@
     padding-right:5px;
     filter: grayscale(100%);
 }
+
+@media(max-width:660px){
+    .image-container{
+        display:block;
+        width:100%;
+    }
+
+    .img{
+        display: block;
+        width:80%;
+        height:270px;
+        margin: 5px ;
+    }
+}

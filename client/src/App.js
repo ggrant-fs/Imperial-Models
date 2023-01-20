@@ -4,7 +4,6 @@ import Home from './Pages/Home';
 const MaleModels = React.lazy(()=> import('./Pages/MaleModels'));
 const FemaleModels = React.lazy(()=> import('./Pages/FemaleModels'));
 const Contact = React.lazy(()=> import ('./Pages/Contact'));
-// import LoadingSpinner from './Component/UI/LoadingSpinner';
 
 function App() {
 
