@@ -1,7 +1,8 @@
 import { Grid } from  'react-loader-spinner'
-
+import Layout from './Layout';
 const LoadingSpinner = (props) =>{
     return (
+        
         <Grid
   height="80"
   width="80"
