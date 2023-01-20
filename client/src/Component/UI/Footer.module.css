@@ -49,9 +49,10 @@ ul{
 
 @media(max-width:660px){
     .main-footer{
-        height:80vh;
+        height:85vh;
         width:100vw;
     }
+    
     .main-footer > li{
         margin-bottom: 5px;
     }
@@ -65,10 +66,11 @@ ul{
 @media(max-width:660px){
     .items-container{
         width:100%;
-        left:37%;
+        left:2%;
     }
 
     .footer__item{
         font-size: 20px;
+        text-align: center;
     }
 }

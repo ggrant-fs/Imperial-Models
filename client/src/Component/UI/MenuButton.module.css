@@ -9,3 +9,10 @@
     margin-left:10px;
     cursor: pointer;
 }
+
+@media(max-width:660px){
+   .triangle{
+      margin-top: 20px;
+      margin-left:15px;
+   }
+}

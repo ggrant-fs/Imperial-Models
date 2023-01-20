@@ -27,3 +27,17 @@
    font-size:25px;
    font-family: 'Wire One', sans-serif;
 }
+
+@media(max-width:660px){
+   .header{
+      height:60px;
+   }
+   .header__menu__btn{
+      left:40%;
+      margin-bottom: 9px;
+   }
+   .title-wrapper{
+      left:25.5%;
+      font-size: 38px;
+   }
+}
