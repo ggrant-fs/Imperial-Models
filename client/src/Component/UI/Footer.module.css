@@ -46,3 +46,25 @@ ul{
 .main-footer > .items-container:nth-child(2){
     vertical-align: top;
 }
+
+@media(max-width:660px){
+    .main-footer{
+        height:85vh;
+    }
+    .main-footer__title{
+        width:100%;
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+@media(max-width:660px){
+    .items-container{
+        width:100%;
+        left:37%;
+    }
+
+    .footer__item{
+        font-size: 20px;
+    }
+}
