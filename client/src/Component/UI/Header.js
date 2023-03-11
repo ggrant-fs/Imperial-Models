@@ -1,4 +1,5 @@
 import { Fragment} from 'react';
+import 'css.gg/icons/css/menu.css'
 import React from 'react';
 import MenuButton from './MenuButton';
 import styles from './Header.module.css';
@@ -13,7 +14,7 @@ const Header = (props) =>{
            <h3 className={styles["header__title"]}>Imperial Models</h3>
            </div>
            <div className={styles["header__menu__btn"]} onClick={props.openNav}>
-           <i class="gg-menu"></i>
+           <i className="gg-menu"></i>
            </div>
         </header>
         </Fragment>

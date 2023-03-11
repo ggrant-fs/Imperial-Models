@@ -1,4 +1,4 @@
-/* ============= google font imports ================ */
+/*============= google font imports ================*/
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
@@ -28,6 +28,7 @@ main{
 
 .gg-menu{
   cursor: pointer;
+  color:black;
 }
 
 .header__menu__btn:active,
