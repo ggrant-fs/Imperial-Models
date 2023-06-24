@@ -4,7 +4,7 @@ import pic from '../images/malemodel5.jpg';
 import Layout from '../Component/UI/Layout';
 
 
-const Contact = (props) =>{
+export const Contact = (props) =>{
   const firstNameInput = useRef('');
   const lastNameInput = useRef('');
   const emailInput = useRef('');
@@ -29,7 +29,7 @@ useEffect(()=>{
 },[])
 
 
- async function postRequest (){
+  async function postRequest (){
    const url = 'https://imperial-models-default-rtdb.firebaseio.com/contact.json';
    const response = await fetch(url,{
     method:'POST',
@@ -131,4 +131,4 @@ const submitHandler = event =>{
     )
 }
 
-export default Contact;
+
