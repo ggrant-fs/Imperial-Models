@@ -26,7 +26,7 @@ const postData ={
 useEffect(()=>{
   postRequest()
   .catch(console.error())
-},[])
+})
 
 
   async function postRequest (){
