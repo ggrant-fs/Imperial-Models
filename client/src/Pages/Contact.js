@@ -132,3 +132,6 @@ const submitHandler = event =>{
 }
 
 
+
+
+export default Contact;

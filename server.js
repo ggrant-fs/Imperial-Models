@@ -1,23 +1,14 @@
-// const mongoose = require('mongoose');
-//we use dotenv to configure envierment 
-//variables
+const mongoose = require('mongoose');
+const path = require('path');
 const dotenv = require('dotenv');
-//dotenv.config({path:"./config.env"})
-//is the path that connects server.js
-//and .config.env and the enviorment variables
-//inside.
 dotenv.config({path:"./config.env"});
-//if the enviorment variable PORT is not
-//available then use port 5000
 const PORT  = process.env.PORT || 5000;
-// the process.env.DATABASE is an enviorment 
-//variable that is located in the .config file
-//and holds our mongodb connection database string
-// const db = process.env.DATABASE 
+// const db = process.env.DATABASE
+
 const app = require('./app');
 
 if(process.env.NODE_ENV==='production'){
-    app.use(express.static(`client/build`));
+    app.use(express.static(`./client/build`));
  
     app.get('*',(req,res)=>{
        res.sendFile(path.resolve(__dirname,'client','build','index.html'))
@@ -25,7 +16,6 @@ if(process.env.NODE_ENV==='production'){
  }
  
 
-// mongoose connect 
 // mongoose.connect(db,{
 //     useNewUrlParser:true, 
 //     useCreateIndex:true, 

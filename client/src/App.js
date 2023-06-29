@@ -2,9 +2,12 @@ import React,{Suspense} from 'react';
 import { Redirect, Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home';
 import Header from './Component/UI/Header';
-const MaleModels = React.lazy(()=> import('./Pages/MaleModels'));
-const FemaleModels = React.lazy(()=> import('./Pages/FemaleModels'));
-const Contact = React.lazy(()=> import ('./Pages/Contact'));
+import MaleModels from './Pages/MaleModels';
+import FemaleModels from './Pages/FemaleModels';
+import Contact from './Pages/Contact';
+// const MaleModels = React.lazy(()=> import('./Pages/MaleModels'));
+// const FemaleModels = React.lazy(()=> import('./Pages/FemaleModels'));
+// const Contact = React.lazy(()=> import ('./Pages/Contact'));
 
 function App() {
 
